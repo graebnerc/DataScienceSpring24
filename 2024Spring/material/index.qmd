@@ -1,0 +1,21 @@
+---
+title: "Material overview"
+---
+
+|   Session    | Topic                                                   |                      Slides                       |       Exercise code        |
+|:-------------:|:--------------|:-------------:|:-------------:|
+|   [1](#s1)   | [General introduction](/2024Spring/material/session01/) |       [Slides](/2024Spring/material/slides/T1-Introduction.pdf)        |                            |
+|   [2](#s2)   | Basics of R and R-Studio                                |     [Slides](/2024Spring/material/slides/T2-Basics-Functions.pdf)      |          `Basics`          |
+|   [3](#s3)   | Basic objects                                           |          [Slides](/2024Spring/material/slides/T3-Objects.pdf)          |       `ObjectTypes1`       |
+|   [4](#s4)   | Advanced objects                                        |        [Slides](/2024Spring/material/slides/T4-AdvObjects.pdf)         |       `ObjectTypes2`       |
+|      5       | Recap & practice                                        |                                                   |                            |
+|   [6](#s6)   | Visualization                                           |       [Slides](/2024Spring/material/slides/T6-Visualization.pdf)       |      `Visualization1`      |
+|   [7](#s7)   | Project management and data import                      |       [Slides](/2024Spring/material/slides/T7-ProjectSetup.pdf)        |       `ProjectOrga`        |
+| [8 & 9](#s8) | Data wrangling                                          |      [Slides](/2024Spring/material/slides/T8T9-DataWrangling.pdf)      | `Wrangling1`, `Wrangling2` |
+|  [10](#s10)  | Exploratory data analysis (recap)                       | [Slides](/2024Spring/material/slides/T10-ExplorativeDataAnalysis.pdf)  |                            |
+|  [11](#s11)  | Quarto/R Markdown                                       |          [Slides](/2024Spring/material/slides/T11-Quarto.pdf)          |          `Quarto`          |
+|  [12](#s12)  | Recap & practice                                        |                        NA                         |                            |
+|  [13](#s13)  | Introduction to data analysis                           |       [Slides](/2024Spring/material/slides/T13-DataAnalysis.pdf)       |                            |
+|  [14](#s14)  | Sampling                                                |         [Slides](/2024Spring/material/slides/T14-Sampling.pdf)         |         `Sampling`         |
+|  [15](#s15)  | Simple linear Regression                                |  [Slides](/2024Spring/material/slides/T15-SimpleLinearRegression.pdf)  |    `LinearRegression1`     |
+|  [16](#s15)  | Multiple linear Regression                              | [Slides](/2024Spring/material/slides/T16-MultipleLinearRegression.pdf) |    `LinearRegression2`     |

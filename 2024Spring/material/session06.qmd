@@ -1,0 +1,27 @@
+---
+title: "🗓️ Session 6: Visualization"
+date: "2024-04-18"
+date-modified: last-modified
+---
+
+One strength of R is the 
+
+## 👨‍🏫 Lecture Slides 
+
+Will be posted after the session.
+
+## 🎥 Lecture videos 
+
+There will be no videos for recap sesssions.
+
+## 📚 Mandatory Reading
+
+TBD 
+
+## Further Reading
+
+TBS
+
+## ✍️ Coursework
+
+TBD

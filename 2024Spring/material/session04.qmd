@@ -1,0 +1,48 @@
+---
+title: "🗓️ Session 4: Advanced object types in R"
+date: "2024-04-11"
+date-modified: last-modified
+---
+
+In this video-based lecture you learn about the most important advanced
+object types in R. The two object types covered in this lecture, factors and
+data frames, are advanced in the sense that they can be thought of extensions
+of some of the basic object types you encountered before: factors and special
+kinds of integers, and data frames are special kinds of lists. This lecture
+concludes the first part of the lecture about the basics of R.
+
+## 👨‍🏫 Lecture Slides 
+
+Either click on the slide area below or click 
+[here](/2024Spring/material/slides/T4-AdvObjects.pdf) to download the slides.
+
+
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T4-AdvObjects.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
+
+## 🎥 Lecture videos 
+
+::: {.callout-warning}
+## Videos not yet available.
+Videos will be added soon.
+:::
+
+## 📚 Mandatory Reading
+
+Read the following tutorials:
+
+- [Fundamental object types in R III: Factors and data frames](/2024Spring/tutorials/obj-types-iii-adv/index.qmd)
+
+## ✍️ Coursework
+
+- Do the `ObjectTypes2` exercises of the package `DataScienceExercises` 
+- If you have questions or problems, please post them in the Moodle forum

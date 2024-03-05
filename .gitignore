@@ -235,3 +235,12 @@ cython_debug/
 
 
 .vscode/
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+**/.DS_Store
+
+2023
+MISC

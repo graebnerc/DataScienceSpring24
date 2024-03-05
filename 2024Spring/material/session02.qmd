@@ -1,0 +1,61 @@
+---
+title: "🗓️ Session 2: First steps in R"
+date: "2024-03-21"
+date-modified: last-modified
+---
+
+In this session, you will learn about how to use the integrated development
+environment R-Studio to edit and execute R script and about the basic commands 
+in R. Moreover, you will be introduced to two fundamental concepts: 
+assignments and functions.
+
+## 👨‍🏫 Lecture Slides 
+
+Either click on the slide area below or click 
+[here](/2024Spring/material/slides/T2-Basics-Functions.pdf) to download the slides.
+
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T2-Basics-Functions.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
+## 🎥 Accompanying lecture videos 
+
+All the videos are available via this [playlist.](https://www.youtube.com/playlist?list=PLZDawQMrG1RLPfd_e-ktZ_IIg9Kkbr16a).
+
+::: {.callout-note collapse="true"}
+## Expand to access the videos directly
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/tSNv_GLxRdQ?si=Il5p96fLOUyfCAE6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/CRQruT__X8Y?si=mplAj8dcIXz1EJUS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/VutTy0OmX7Y?si=s9BWi73wHzry5yhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+:::
+
+## 📚 Mandatory Reading
+
+Read the tutorial [First steps in R](/2024Spring/tutorials/first-steps/index.qmd)
+.
+
+## ✍️ Coursework
+
+- Do the `Basics` exercises of the package `DataScienceExercises` 
+- If you have questions or problems, please post them in the Moodle forum

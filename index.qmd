@@ -1,31 +1,55 @@
 ---
-title: "MY COURSE CODE - MY COURSE NAME"
-format:
-  html:
-    include-before-body: helpers/remove-nav.html
-    include-after-body: helpers/remove-title.html
+title: "Data science using R"
 ---
 
-# 📑 Course Brief
+# 📑 The course in brief
 
-**Focus:** the focus of this course is to learn stuff
+**Focus:** 
+You will be introduced to the statistical programming language R and acquire 
+practical knowledge about the fundamental tools of data science and machine 
+learning. 
 
-**How:** hands-on learning
+**How:** 
+The course comprises a mixture of (i) lectures, in which I introduce concepts
+in the classroom, (ii) automated hands-on exercises for you to do at home on
+your own and (iii) flipped-classroom elements where you watch videos at home
+and we practice the content together in class.
+
+**Prerequisites:**
+The course does not require you to have any prior knowledge in R or any other 
+programming language. Depending on your prior knowledge or affinity to 
+programming, the course will be quite demanding, but equip you with 
+computational skills that are most valuable both within academia and the 
+business world. 
 
 # 🎯 Learning Objectives
 
-- You will discover how to do X
-- Distinguish X from **X**
-- Practice how to put things _in italic_
-- Discover how to highlight `code` inline
-- Proceed to learn stuff
+-	Use R together with the integrated development environment R Studio
+-	Understand the use of R packages to perform specific data analytic tasks
+-	Write reproducible data analysis reports using Quarto
+-	Transform raw data into tidy data, which is suitable for further analysis
+-	Choose and justify the correct visualization approach, and create appealing visualizations using the R package `ggplot2`
+-	Implement and interpret linear regression models with numerical and categorial variables
+
 
 
 -----------------
 
-**Select Academic Year/Term:**
+**Historic versions of the course**
 
-<a href="2023/index.qmd">
-    <button class="button-61">2022/23</button>
+<a href="2024Spring/index.qmd">
+    <button class="button-61">Spring semester 2024</button>
 </a>
 
+<a href=https://euf-datascience-spring23.netlify.app>
+    <button class="button-61">Spring semester 2023</button>
+</a>
+
+<a href=https://datascience-euf-fall22.netlify.app>
+    <button class="button-61">Fall semester 2022</button>
+</a>
+<!---
+<a href="2023/index.qmd">
+    <button class="button-61">EXAMPLE</button>
+</a>
+--->
