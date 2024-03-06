@@ -37,10 +37,6 @@ business world.
 
 **Historic versions of the course**
 
-<a href="2024Spring/index.qmd">
-    <button class="button-61">Spring semester 2024</button>
-</a>
-
 <a href=https://euf-datascience-spring23.netlify.app>
     <button class="button-61">Spring semester 2023</button>
 </a>
@@ -48,8 +44,3 @@ business world.
 <a href=https://datascience-euf-fall22.netlify.app>
     <button class="button-61">Fall semester 2022</button>
 </a>
-<!---
-<a href="2023/index.qmd">
-    <button class="button-61">EXAMPLE</button>
-</a>
---->
