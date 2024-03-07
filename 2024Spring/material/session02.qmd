@@ -27,7 +27,7 @@ Either click on the slide area below or click
 
 ## 🎥 Accompanying lecture videos 
 
-All the videos are available via this [playlist.](https://www.youtube.com/playlist?list=PLZDawQMrG1RLPfd_e-ktZ_IIg9Kkbr16a).
+All the videos are available via this [playlist](https://www.youtube.com/playlist?list=PLZDawQMrG1RLPfd_e-ktZ_IIg9Kkbr16a).
 
 ::: {.callout-note collapse="true"}
 ## Expand to access the videos directly
@@ -52,8 +52,14 @@ All the videos are available via this [playlist.](https://www.youtube.com/playli
 
 ## 📚 Mandatory Reading
 
-Read the tutorial [First steps in R](/2024Spring/tutorials/first-steps/index.qmd)
-.
+- Tutorial [First steps in R](/2024Spring/tutorials/first-steps/index.qmd)
+- [Chapter 2](https://r4ds.hadley.nz/workflow-basics) in @r4ds.
+
+### 🏆 Further readings
+
+- [R Studio Cheat Sheet](https://rstudio.github.io/cheatsheets/html/rstudio-ide.html)
+- [Chapter 4](https://r4ds.hadley.nz/workflow-style) in @r4ds.
+- [Chapter 8](https://r4ds.hadley.nz/workflow-help) in @r4ds.
 
 ## ✍️ Coursework
 

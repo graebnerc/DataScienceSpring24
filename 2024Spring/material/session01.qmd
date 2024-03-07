@@ -1,5 +1,5 @@
 ---
-title: "🗓️ Session 01 - Introduction and overview"
+title: "🗓️ Session 01 - Introduction, overview and installation"
 date: "2024-03-14"
 date-modified: last-modified
 ---
@@ -8,7 +8,8 @@ In this first week, we will cover what you can expect to learn from this course
 and the course logistics: all you need to know about the structure of the 
 lectures, exercises, and assessments, what will be expected of you, what you
 will learn and what has helped previous participants in excelling in this 
-course. 
+course. Finally, we are installing all the programs and packages we need in
+this course.
 
 ## 👨‍🏫 Lecture Slides 
 
@@ -28,7 +29,7 @@ Either click on the slide area below or click
 
 ## 🎥 Accompanying lecture videos 
 
-All the videos are available via this [playlist.](https://www.youtube.com/playlist?list=PLZDawQMrG1RImURlbldAF773MDRqeARNu).
+All the videos are available via this [playlist](https://www.youtube.com/playlist?list=PLZDawQMrG1RImURlbldAF773MDRqeARNu).
 
 ::: {.callout-note collapse="true"}
 ## Expand to access the videos directly

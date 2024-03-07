@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: d5ca0752-e2f3-4647-ac59-57e12cbd9bd1
+      url: 'https://datascience-euf-spring24.netlify.app'

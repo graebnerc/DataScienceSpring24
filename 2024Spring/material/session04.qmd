@@ -42,6 +42,13 @@ Read the following tutorials:
 
 - [Fundamental object types in R III: Factors and data frames](/2024Spring/tutorials/obj-types-iii-adv/index.qmd)
 
+### 🏆 Further readings
+
+*I suggest you read these references after you learned about data frames in*
+*session 4 and data wrangling techniques in sessions 8 and 9.*
+
+- [Chapter 16](https://r4ds.hadley.nz/factors) in @r4ds. 
+
 ## ✍️ Coursework
 
 - Do the `ObjectTypes2` exercises of the package `DataScienceExercises` 
