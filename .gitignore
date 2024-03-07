@@ -1,6 +1,6 @@
 .vscode/
 /.quarto/
-/_site/
+#/_site/
 
 .Rproj.user
 .Rhistory
