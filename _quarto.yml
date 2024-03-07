@@ -70,5 +70,7 @@ format:
         - css/custom.scss # Change the default colour
     toc: true
 
+execute:
+  freeze: auto
 #margin-header: |
 # ![](/figures/logos/MY_INSTITUTION.png)
