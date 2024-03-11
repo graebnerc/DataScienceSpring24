@@ -42,7 +42,9 @@ reading lists [here](/2024Spring/material/).
 Complete material lists for the single sessions are distributed via the 
 respective session pages.
 Lecture videos can, so far, only be accessed via Moodle. EUF students can
-register in the respective Moodle course using the password `DataScience24`.
+register for the Moodle course
+[13895](https://elearning.uni-flensburg.de/moodle/course/view.php?id=13895) 
+using the password `DataScience24`.
 
 # 📖 Tutorials
 
