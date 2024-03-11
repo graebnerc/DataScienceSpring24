@@ -21,7 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -217,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">03 03 2024</p>
+      <p class="date-modified">11 03 2024</p>
     </div>
   </div>
     
@@ -226,31 +245,45 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>One strength of R is the</p>
+<p>One area for which R is particulary well-known for is the area of <em>visualization</em>. This is particularly because of the package <a href="https://ggplot2.tidyverse.org/">ggplot2</a>. This session introduces <code>ggplot2</code> and the general approach to generate visualization in R. The good thing is that if you follow the approach described here, you can basically create every visualization type you can think of.</p>
 <section id="lecture-slides" class="level2">
 <h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Will be posted after the session.</p>
+<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T6-Visualization.pdf">here</a> to download the slides.</p>
+<div class="embed-container">
+  <iframe src="../../2024Spring/material/slides/T6-Visualization.pdf" style="border: 0.5px" width="80%" height="80%"></iframe>
+</div>
 </section>
 <section id="lecture-videos" class="level2">
 <h2 class="anchored" data-anchor-id="lecture-videos">🎥 Lecture videos</h2>
-<p>There will be no videos for recap sesssions.</p>
+<p>Currently, no videos are available for this session. Check out the <a href="../../2024Spring/tutorials/visualization/index.html">tutorial</a> instead.</p>
 </section>
 <section id="mandatory-reading" class="level2">
 <h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
-<p>TBD</p>
+<ul>
+<li>The tutorial <a href="../../2024Spring/tutorials/visualization/index.html">visualization</a></li>
+</ul>
 </section>
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<p>TBS</p>
+<ul>
+<li><span class="citation" data-cites="hadleygraphics">Wickham (<a href="#ref-hadleygraphics" role="doc-biblioref">2010</a>)</span>, who introduces the theory underlying <code>ggplot2</code></li>
+<li><a href="https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf">ggplot2 cheat sheet</a></li>
+<li>Browse the website <a href="https://www.data-to-viz.com/">from Data to Viz</a> and try to re-create some of the figures yourself</li>
+</ul>
 </section>
 <section id="coursework" class="level2">
 <h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
 <p>TBD</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hadleygraphics" class="csl-entry" role="listitem">
+Wickham, H. (2010) <span>“<a href="https://doi.org/10.1198/jcgs.2009.07098">A <span>Layered Grammar</span> of <span>Graphics</span></a>,”</span> <em>Journal of Computational and Graphical Statistics</em> 19(1): 3–28.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

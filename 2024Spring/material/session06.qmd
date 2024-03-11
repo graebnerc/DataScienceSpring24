@@ -4,23 +4,46 @@ date: "2024-04-18"
 date-modified: last-modified
 ---
 
-One strength of R is the 
+One area for which R is particulary well-known for is the area of 
+*visualization*. This is particularly because of the package 
+[ggplot2](https://ggplot2.tidyverse.org/). 
+This session introduces `ggplot2` and the general approach to generate 
+visualization in R. The good thing is that if you follow the approach described
+here, you can basically create every visualization type you can think of.
+
 
 ## 👨‍🏫 Lecture Slides 
 
-Will be posted after the session.
+Either click on the slide area below or click 
+[here](/2024Spring/material/slides/T6-Visualization.pdf) to download the slides.
+
+
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T6-Visualization.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
 
 ## 🎥 Lecture videos 
 
-There will be no videos for recap sesssions.
+Currently, no videos are available for this session. Check out the 
+[tutorial](/2024Spring/tutorials/visualization/index.qmd) instead.
 
 ## 📚 Mandatory Reading
 
-TBD 
+- The tutorial [visualization](/2024Spring/tutorials/visualization/index.qmd)
 
 ## Further Reading
 
-TBS
+- @hadleygraphics, who introduces the theory underlying `ggplot2`
+- [ggplot2 cheat sheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf)
+- Browse the website [from Data to Viz](https://www.data-to-viz.com/) and try to re-create some of the figures yourself
 
 ## ✍️ Coursework
 
