@@ -266,6 +266,48 @@
     "text": "✍️ Coursework\nTBD"
   },
   {
+    "objectID": "2024Spring/material/session07.html",
+    "href": "2024Spring/material/session07.html",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "",
+    "text": "This is one of the most underestimated topics. In this session you learn how to adequately set up your working environment on your computer. This means where you should save which files, which directory structure you should use, and how to point the computer to other files on your computer. In this context you also learn how to import data obtained elsewhere into R. While this sounds boring at first, taking seriously the insights from this session will save you tons of hours of frustration in the future!"
+  },
+  {
+    "objectID": "2024Spring/material/session07.html#lecture-slides",
+    "href": "2024Spring/material/session07.html#lecture-slides",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session07.html#lecture-videos",
+    "href": "2024Spring/material/session07.html#lecture-videos",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nCurrently, no videos are available for this session. Check out the tutorials on project setup and data impot instead."
+  },
+  {
+    "objectID": "2024Spring/material/session07.html#mandatory-reading",
+    "href": "2024Spring/material/session07.html#mandatory-reading",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nThe tutorial Setting up an R project\nThe tutorial Importing and exporting data using data.table"
+  },
+  {
+    "objectID": "2024Spring/material/session07.html#further-reading",
+    "href": "2024Spring/material/session07.html#further-reading",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "Further Reading",
+    "text": "Further Reading\nWhile we do not cover this in this course, I highly recommend learning the version control system Git. More precisely, I can recommend the following:\n\nIntroduction to Git\nIntroduction to GitHub\nBlog"
+  },
+  {
+    "objectID": "2024Spring/material/session07.html#coursework",
+    "href": "2024Spring/material/session07.html#coursework",
+    "title": "🗓️ Session 7: Project management and data import",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\nTBD"
+  },
+  {
     "objectID": "2024Spring/material/timetable.html",
     "href": "2024Spring/material/timetable.html",
     "title": "Seminar timetable",
@@ -466,7 +508,7 @@
     "href": "2024Spring/tutorials/installing-packages/index.html",
     "title": "Installing R packages",
     "section": "",
-    "text": "After installing R and R-Studio, you still need to install a number of so called R packages. We will learn more about what packages are and how to use them later. Nevertheless, I strongly recommend you to install already all the packages you will need over the following semester already now. This way you make sure that everything is working now, and you save yourself from trouble during the semester. Moreover, installing these packages is necessary to do the exercises provided after each session.\nTo install packages, a stable internet connection is required. Then, proceed as follows:\n\nDownload the script install_packages_script.R and save it in a directory of your choice\nOpen the file install_packages_script.R in R-Studio. To this end, right-click on the file and select Open with, and then choose R-Studio.\nAdjust the first line of the script to the OS you are using. For instance, when you are using a Mac the file should look like this:\n\n\n\n\n\n\n\n\n\n\n\n\nSelect lines 1-52 and click on the button Run (the screenshot only shows the lines 42-52, the previous lines are also selected):\n\n\n\n\n\n\n\nCheck if the package here was installed. You will get the respective message in the console:\n\n\n\n\n\n\nIf you encounter any problems, please make a screenshot and post it in the Moodle forum. 6. Select the rest of the scrip and run it as you did with the first lines. If you get the following message everything worked well and all packages were installed successfully:\n\n\n\n\n\nIf not, please post the file InstallationLog.txt and a screenshot with an error into the Moodle forum.\nNote: maybe you will see the following message during the installation process (possible multiple times):\n\n\n\n\n\nI recommend to type No and press enter. If, for any reason, the installation process is not successful you might run the installation commands again and try responding with Yes, this might sometimes fix the problem."
+    "text": "After installing R and R-Studio, you still need to install a number of so called R packages. We will learn more about what packages are and how to use them later. Nevertheless, I strongly recommend you to install already all the packages you will need over the following semester already now. This way you make sure that everything is working now, and you save yourself from trouble during the semester. Moreover, installing these packages is necessary to do the exercises provided after each session.\nTo install packages, a stable internet connection is required. Then, proceed as follows:\n\nDownload the script install_packages_script.R and save it in a directory of your choice\nOpen the file install_packages_script.R in R-Studio. To this end, right-click on the file and select Open with, and then choose R-Studio.\nAdjust the first line of the script to the OS you are using. For instance, when you are using a Mac the file should look like this:\n\n\n\n\n\n\n\n\n\n\n\n\nSelect lines 1-52 and click on the button Run (the screenshot only shows the lines 42-52, the previous lines are also selected):\n\n\n\n\n\n\n\nCheck if the package here was installed. You will get the respective message in the console:\n\n\n\n\n\n\nIf you encounter any problems, please make a screenshot and post it in the Moodle forum.\n\nSelect the rest of the scrip and run it as you did with the first lines. If you get the following message everything worked well and all packages were installed successfully:\n\n\n\n\n\n\nIf not, please post the file InstallationLog.txt and a screenshot with an error into the Moodle forum.\nNote: maybe you will see the following message during the installation process (possible multiple times):\n\n\n\n\n\nI recommend to type No and press enter. If, for any reason, the installation process is not successful you might run the installation commands again and try responding with Yes, this might sometimes fix the problem."
   },
   {
     "objectID": "2024Spring/tutorials/installing-packages/index.html#a-common-problem-when-installing-tinytex-on-a-mac",
