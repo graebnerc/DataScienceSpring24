@@ -38,7 +38,7 @@ For information on how to use the exercise code, read
 |   [3](#s3)   | [Basic objects](/2024Spring/material/session03.qmd)                                           |          [Slides](/2024Spring/material/slides/T3-Objects.pdf)          |       `ObjectTypes1`       |
 |   [4](#s4)   | [Advanced objects](/2024Spring/material/session04.qmd)                                        |        [Slides](/2024Spring/material/slides/T4-AdvObjects.pdf)         |       `ObjectTypes2`       |
 |      5       | [Recap & practice](/2024Spring/material/session05.qmd)                                        |                                                   |                            |
-|   [6](#s6)   | Visualization                                           |       [Slides](/2024Spring/material/slides/T6-Visualization.pdf)       |      `Visualization1`      |
+|   [6](#s6)   | [Visualization](/2024Spring/material/session05.qmd)                                            |       [Slides](/2024Spring/material/slides/T6-Visualization.pdf)       |      `Visualization1`      |
 |   [7](#s7)   | Project management and data import                      |       [Slides](/2024Spring/material/slides/T7-ProjectSetup.pdf)        |       `ProjectOrga`        |
 | [8 & 9](#s8) | Data wrangling                                          |      [Slides](/2024Spring/material/slides/T8T9-DataWrangling.pdf)      | `Wrangling1`, `Wrangling2` |
 |  [10](#s10)  | Exploratory data analysis (recap)                       | [Slides](/2024Spring/material/slides/T10-ExplorativeDataAnalysis.pdf)  |                            |

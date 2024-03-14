@@ -1,0 +1,60 @@
+---
+title: "🗓️ Session 7: Project management and data import"
+date: "2024-04-25"
+date-modified: last-modified
+---
+
+This is one of the most underestimated topics. In this session you learn how
+to adequately set up your working environment on your computer. This means
+where you should save which files, which directory structure you should use,
+and how to point the computer to other files on your computer. In this context
+you also learn how to import data obtained elsewhere into R. While this sounds
+boring at first, taking seriously the insights from this session will save you
+tons of hours of frustration in the future!
+
+
+## 👨‍🏫 Lecture Slides 
+
+Either click on the slide area below or click 
+[here](/2024Spring/material/slides/T7-ProjectSetup.pdf) to download the slides.
+
+
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T7-ProjectSetup.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
+
+## 🎥 Lecture videos 
+
+Currently, no videos are available for this session. Check out the tutorials
+on 
+[project setup](/2024Spring/tutorials/setting-up-an-r-project/index.qmd) 
+and 
+[data impot](/2024Spring/tutorials/importing-exporting-data/index.qmd) 
+instead.
+
+## 📚 Mandatory Reading
+
+- The tutorial [Setting up an R project](/2024Spring/tutorials/setting-up-an-r-project/index.qmd)
+- The tutorial [Importing and exporting data using data.table](/2024Spring/tutorials/importing-exporting-data/index.qmd) 
+
+## Further Reading
+
+While we do not cover this in this course, I highly recommend learning the 
+version control system [Git](https://git-scm.com/). 
+More precisely, I can recommend the following:
+
+- Introduction to Git
+- Introduction to GitHub
+- Blog 
+
+## ✍️ Coursework
+
+TBD
