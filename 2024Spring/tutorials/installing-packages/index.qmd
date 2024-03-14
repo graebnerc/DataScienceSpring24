@@ -96,6 +96,7 @@ knitr::include_graphics("here-success.png", auto_pdf = TRUE)
 
 If you encounter any problems, please 
 make a screenshot and post it in the Moodle forum.
+
 6. Select the rest of the scrip and run it as you did with the first lines.
 If you get the following message everything worked well and all packages
 were installed successfully:
@@ -172,8 +173,9 @@ quarto install tinytex
 ```
 
 To make sure everything runs smoothly you should download the document 
-[test_pdf.qmd](test_pdf.qmd).
-To test whether everything works, please open `test.Rmd` in R-Studio and then
+[test_pdf.qmd](test_pdf.qmd.zip) (its a zip file that you first need to extract).
+
+To test whether everything works, please open `test.qmd` in R-Studio and then
 click on the button `Render` 
 (which is a couple of buttons left of `Run`).
 

@@ -1,4 +1,4 @@
-your_platform <- "windows" # Choose one of the following: mac, linux or windows
+your_platform <- "mac" # Choose one of the following: mac, linux or windows
 
 if (your_platform=="mac"){
   install_type <- "mac.binary"
@@ -35,7 +35,7 @@ if (your_platform=="mac"){
 here_installed <- require("here")
 
 if (isFALSE(here_installed)){
-  install.packages("here", type = install_type)
+  install.packages("here", type = install_type); if (isFALSE(here_installed)){install.packages('here')}
 } 
 
 here_installed <- require("here")
@@ -84,7 +84,7 @@ required_packages_cran <- c(
   "WDI"
 )
 
-install.packages(required_packages_cran, type = install_type)
+install.packages(required_packages_cran) # , type = install_type
 
 required_packages_github <- c(
   "rstudio/learnr",
