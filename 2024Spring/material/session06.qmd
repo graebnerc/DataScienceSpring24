@@ -47,4 +47,15 @@ Currently, no videos are available for this session. Check out the
 
 ## ✍️ Coursework
 
-TBD
+- Do the exercises `Visualization1` from the `DataScienceExercises` package
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "Visualization1", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
