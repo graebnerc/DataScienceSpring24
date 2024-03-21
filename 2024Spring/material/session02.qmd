@@ -25,6 +25,12 @@ Either click on the slide area below or click
 </div>
 ```
 
+::: {.callout-tip collapse="true"}
+## The R script of this session
+<script src="https://gist.github.com/graebnerc/ade2efa9b3e6a31f237924d49c9b78ed.js"></script>
+
+:::
+
 ## 🎥 Accompanying lecture videos 
 
 All the videos are available via this [playlist](https://www.youtube.com/playlist?list=PLZDawQMrG1RLPfd_e-ktZ_IIg9Kkbr16a).
@@ -64,4 +70,16 @@ All the videos are available via this [playlist](https://www.youtube.com/playlis
 ## ✍️ Coursework
 
 - Do the `Basics` exercises of the package `DataScienceExercises` 
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "Basics", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
+
 - If you have questions or problems, please post them in the Moodle forum
