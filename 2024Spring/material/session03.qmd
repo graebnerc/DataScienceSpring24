@@ -67,8 +67,6 @@ All the videos are available via this [playlist](https://www.youtube.com/playlis
 ```
 :::
 
-
-
 ## 📚 Mandatory Reading
 
 Read the following tutorials:
@@ -86,5 +84,17 @@ Read the following tutorials:
 
 ## ✍️ Coursework
 
-- Do the `ObjectTypes1` exercises of the package `DataScienceExercises` 
+- Do the `ObjectTypes1` exercises of the package `DataScienceExercises`
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "ObjectTypes1", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
+
 - If you have questions or problems, please post them in the Moodle forum

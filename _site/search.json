@@ -228,7 +228,7 @@
     "href": "2024Spring/material/session04.html#coursework",
     "title": "🗓️ Session 4: Advanced object types in R",
     "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the ObjectTypes2 exercises of the package DataScienceExercises\nIf you have questions or problems, please post them in the Moodle forum"
+    "text": "✍️ Coursework\n\nDo the ObjectTypes2 exercises of the package DataScienceExercises\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ObjectTypes2\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nIf you have questions or problems, please post them in the Moodle forum"
   },
   {
     "objectID": "2024Spring/material/session02.html",
@@ -242,7 +242,7 @@
     "href": "2024Spring/material/session02.html#lecture-slides",
     "title": "🗓️ Session 2: First steps in R",
     "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\n\n\n\n\n\nThe R script of this session"
   },
   {
     "objectID": "2024Spring/material/session02.html#accompanying-lecture-videos",
@@ -263,7 +263,7 @@
     "href": "2024Spring/material/session02.html#coursework",
     "title": "🗓️ Session 2: First steps in R",
     "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the Basics exercises of the package DataScienceExercises\nIf you have questions or problems, please post them in the Moodle forum"
+    "text": "✍️ Coursework\n\nDo the Basics exercises of the package DataScienceExercises\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Basics\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nIf you have questions or problems, please post them in the Moodle forum"
   },
   {
     "objectID": "2024Spring/material/index.html",
@@ -382,7 +382,7 @@
     "href": "2024Spring/material/session03.html#coursework",
     "title": "🗓️ Session 3: Basic object types in R",
     "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the ObjectTypes1 exercises of the package DataScienceExercises\nIf you have questions or problems, please post them in the Moodle forum"
+    "text": "✍️ Coursework\n\nDo the ObjectTypes1 exercises of the package DataScienceExercises\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ObjectTypes1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nIf you have questions or problems, please post them in the Moodle forum"
   },
   {
     "objectID": "2024Spring/material/session05.html",
