@@ -28,7 +28,6 @@ Either click on the slide area below or click
 ::: {.callout-tip collapse="true"}
 ## The R script of this session
 <script src="https://gist.github.com/graebnerc/ade2efa9b3e6a31f237924d49c9b78ed.js"></script>
-
 :::
 
 ## 🎥 Accompanying lecture videos 

@@ -28,12 +28,44 @@ Either click on the slide area below or click
 </div>
 ```
 
+::: {.callout-tip collapse="true"}
+## The R script of this session
+<script src="https://gist.github.com/graebnerc/daef5dee107ee89ca9cd618fa0dde96d.js"></script>
+:::
 
 ## 🎥 Lecture videos 
 
-::: {.callout-warning}
-## Videos not yet available.
-Videos will be added soon.
+All the videos are available via this [playlist](https://www.youtube.com/playlist?list=PLZDawQMrG1RK0Ia3Y3AFqf_FP59GJnIP7).
+
+::: {.callout-note collapse="true"}
+## Expand to access the videos directly
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/y-2i8MmT7y8?si=zqoHXyn0R43wDgtD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/0-oFA2V6b-Q?si=McN3QrmKbZ_IjWwK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/yYR3C77UQC0?si=KPMM21mc-w6k862A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/GrEdx3T4Ylk?si=eiDv6FSQSoipMPE7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+
+```{=html}
+<div class="embed-container">
+<iframe width="370" height="208" src="https://www.youtube.com/embed/TnFbHp7MFRk?si=qcff5TBtPmX3hJlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
 :::
 
 ## 📚 Mandatory Reading
