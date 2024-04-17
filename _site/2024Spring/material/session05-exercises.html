@@ -8,7 +8,7 @@
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Claudius Gräbner-Radkowitsch">
 
-<title>Data science using R - 🗓️ Session 5: Recap and practice</title>
+<title>Data science using R - Exercises for Recap Session 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../2024Spring/material/session06.html" rel="next">
-<link href="../../2024Spring/material/session04.html" rel="prev">
 <link href="../../figures/icons/course_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -64,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Data science using R - 🗓️ Session 5: Recap and practice">
+<meta property="og:title" content="Data science using R - Exercises for Recap Session 1">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Data science using R">
 </head>
@@ -95,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../2024Spring/material/index.html">🗓️ Material</a></li><li class="breadcrumb-item"><a href="../../2024Spring/material/session05.html">Session 05</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exercises for Recap Session 1</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -160,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../2024Spring/material/session05.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../2024Spring/material/session05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Session 05</span></a>
   </div>
 </li>
@@ -188,19 +220,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
-  <li><a href="#lecture-videos" id="toc-lecture-videos" class="nav-link" data-scroll-target="#lecture-videos">🎥 Lecture videos</a></li>
-  <li><a href="#mandatory-reading" id="toc-mandatory-reading" class="nav-link" data-scroll-target="#mandatory-reading">📚 Mandatory Reading</a></li>
-  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
+  <li><a href="#exercise-1-basic-object-types" id="toc-exercise-1-basic-object-types" class="nav-link active" data-scroll-target="#exercise-1-basic-object-types">Exercise 1: Basic object types</a></li>
+  <li><a href="#exercise-2-define-a-function" id="toc-exercise-2-define-a-function" class="nav-link" data-scroll-target="#exercise-2-define-a-function">Exercise 2: Define a function</a></li>
+  <li><a href="#exercise-3-lists" id="toc-exercise-3-lists" class="nav-link" data-scroll-target="#exercise-3-lists">Exercise 3: Lists</a></li>
+  <li><a href="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf" id="toc-exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="nav-link" data-scroll-target="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf">Exercise 4: Data frames and the study semester distribution at EUF</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="session05-exercises.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🗓️ Session 5: Recap and practice</h1>
+<h1 class="title">Exercises for Recap Session 1</h1>
 </div>
 
 
@@ -233,26 +265,54 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This session is about recap and practice. We will do exercises on topics that you suggest, and recap concepts you found particularly hard to grasp. To this end, make sure you communicate your preferences on topics via Moodle until one week before this session.</p>
-<section id="lecture-slides" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Will be posted after the session.</p>
+<section id="exercise-1-basic-object-types" class="level1">
+<h1>Exercise 1: Basic object types</h1>
+<p>Consider the following vector:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex_1_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"2"</span>, <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li><p>What is the type of this vector? Why?</p></li>
+<li><p>What happens if you coerce this vector into type integer? Why?</p></li>
+<li><p>What does <code>sum(is.na(x))</code> tell you about a vector <code>x</code>? What is happening here?</p></li>
+<li><p>Is it a good idea to use <code>as.integer()</code> on double characters to round them to the next integer? Why (not)? What other ways are there to do the rounding?</p></li>
+</ol>
 </section>
-<section id="lecture-videos" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-videos">🎥 Lecture videos</h2>
-<p>There will be no videos for recap sessions.</p>
+<section id="exercise-2-define-a-function" class="level1">
+<h1>Exercise 2: Define a function</h1>
+<p>Create functions that take a vector as input and returns:</p>
+<ol type="1">
+<li><p>The last value.</p></li>
+<li><p>Every element except the last value and any missing values.</p></li>
+<li><p>Only even numbers.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Hint: Use the operation <code>x %% y</code> to get the remainder from diving <code>x</code> by <code>y</code>, the so called ‘modulo y’. For even numbers, the modulo 2 is zero.</p>
+</blockquote>
+<p>Apply your function to the following example vector:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ex_2_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">3</span>, <span class="sc">-</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="mandatory-reading" class="level2">
-<h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
-<p>TBD</p>
+<section id="exercise-3-lists" class="level1">
+<h1>Exercise 3: Lists</h1>
+<ol type="1">
+<li><p>Create a list that contains three elements called <code>'a'</code>, <code>'b'</code> and <code>'c'</code>. The first element should correspond to a double vector with the elements <code>1.5</code>, <code>-2.9</code> and <code>99</code>. The second element should correspond to a character vector with the elments <code>'Hello'</code>, <code>'3'</code>, and <code>'EUF'</code>. The third element should contain three times the entry <code>FALSE</code>.</p></li>
+<li><p>Transform this list into a <code>data.frame</code> and a <code>tibble</code>. Then apply <code>str()</code> to get information about the respective structure. How do the results differ?</p></li>
+</ol>
 </section>
-<section id="coursework" class="level2">
-<h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
-<p><em>During the first 60 minutes of the session you will work on this sheet in groups</em> <em>of three people. Please use only one computer but develop the solutions together.</em> <em>In the remaining 30 minutes we will go through your solutions and discuss problems.</em> <em>I will post my own solutions online after the session, but urge to first try</em> <em>to come up with solutions on your own.</em></p>
-<ul>
-<li><a href="../../2024Spring/material/session05-exercises.html">Exercise sheet for this session</a></li>
-<li>Possible solutions to the exercises</li>
-</ul>
+<section id="exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="level1">
+<h1>Exercise 4: Data frames and the study semester distribution at EUF</h1>
+<p>The package <code>DataScienceExercises</code> contains a data set called <code>EUFstudentsemesters</code>, which contains information about the distribution of study semesters of enrolled students at the EUF in 2021. You can shortcut the data set as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>euf_semesters <span class="ot">&lt;-</span> DataScienceExercises<span class="sc">::</span>EUFstudentsemesters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li><p>What happens if you extract the column with study semesters as a vector and transform it into a <code>double</code>?</p></li>
+<li><p>What is the average study semester of those students being in their 8th or earlier semester?</p></li>
+<li><p>How many students are in their 9th or higher study semester?</p></li>
+<li><p>What does <code>typeof(euf_semesters)</code> return and why?</p></li>
+</ol>
 
 
 </section>
@@ -505,18 +565,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../2024Spring/material/session04.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Session 04</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../2024Spring/material/session06.html" class="pagination-link">
-        <span class="nav-page-text">Session 06</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
