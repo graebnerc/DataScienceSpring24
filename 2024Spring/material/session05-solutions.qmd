@@ -155,8 +155,9 @@ get_last_val <- function(x){
 
 ```{r}
 get_beginning <- function(x){
-  beginning <- x[-length(x)]
-  beginning_nonas <- beginning[!is.na(beginning)]
+  beginning <- x[-length(x)] # Removes last value
+  na_positions <- which(is.na(beginning)) # Get positions of NA values
+  beginning_nonas <- beginning[-na_positions] # Removes these values
   return(beginning_nonas)
 } 
 ```
@@ -168,9 +169,11 @@ the so called 'modulo y'. For even numbers, the modulo 2 is zero.
 
 ```{r}
 get_even <- function(x){
-  even_nbs <- x[x%%2==0]
-  even_nbs_nonas <- even_nbs[!is.na(even_nbs)]
-  return(even_nbs)
+  modulo_2s <- x%%2 # Module 2 is zero for even numbers only
+  even_nbs <- x[modulo_2s==0] # Keep only those for which modulo 2 is zero
+  na_positions <- which(is.na(even_nbs)) # Get positions of NA values
+  even_nbs_nonas <- even_nbs[-na_positions] # Removes these values
+  return(even_nbs_nonas)
 }
 ```
 

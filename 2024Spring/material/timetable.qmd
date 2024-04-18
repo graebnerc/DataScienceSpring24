@@ -11,9 +11,9 @@ execute:
 
 
 ::: {.callout-important collapse=false}
-## 📢 Important change! (17.04.2024)
+## 📢 Important change! (18.04.2024)
 
-- 🗓️ The mid term exam was removed and an additional recap session added!
+- 🗓️ The mid term exam was removed and an additional recap session added tomorrow!
 
 :::
 
@@ -30,13 +30,13 @@ execute:
 +--------+--------------+---------+--------------------------------------------------------+
 | 5      | 18.04.24     | Thu     | Recap and practice                                     |
 +--------+--------------+---------+--------------------------------------------------------+
-| 6      | 19.04.24     | Fri     | Data visualization                                     |
+| 6      | 19.04.24     | Fri     | Recap and practice                                     |
 +--------+--------------+---------+--------------------------------------------------------+
-| 7      | 25.04.24     | Thu     | Project Management and data import                     |
+| 7      | 25.04.24     | Thu     | Data visualization                                     |
 +--------+--------------+---------+--------------------------------------------------------+
-| 8      | 26.04.24     | Fri     | Video lecture on data wrangling I                      |
+| 8      | 26.04.24     | Fri     | Project Management and data import                     |
 +--------+--------------+---------+--------------------------------------------------------+
-| 9      | 02.05.24     | Thu     | Video lecture on data wrangling II                     |
+| 9      | 02.-03.05.24 | Thu     | Video lectures on data wrangling.                      |
 +--------+--------------+---------+--------------------------------------------------------+
 | 10     | 09.05.24     | Thu     | Explorative data analysis in practice                  |
 +--------+--------------+---------+--------------------------------------------------------+
