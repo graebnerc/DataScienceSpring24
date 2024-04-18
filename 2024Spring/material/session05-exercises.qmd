@@ -9,12 +9,29 @@ format:
         toc: false
 ---
 
-# Exercise 1: Basic object types
+# Exercise 1: Basic object types I
+
+1. Create a vector containing the numbers `2`, `5`, `2.4` and `11`.
+
+2. Replace the second element with `5.9`.
+
+3. Add the elements `3` and `1` to the beginning, and the elements 
+`"8.0"` and `"9.2"` to the end of the vector.
+
+4. Create a vector with the numbers from -8 to 9 (step size: 0.5)
+
+5. Compute the square root of each element of the first vector 
+using vectorisation.
+
+6. Create a character vector containing then strings `"Number_1"` to 
+`"Number_5"`. Use suitable helper functions to create this vector quickly.
+
+# Exercise 2: Basic object types II
 
 Consider the following vector:
 
 ```{r}
-ex_1_vec <- c(1, "2", FALSE)
+ex_2_vec <- c(1, "2", FALSE)
 ```
 
 1. What is the type of this vector? Why?
@@ -26,7 +43,7 @@ ex_1_vec <- c(1, "2", FALSE)
 4. Is it a good idea to use `as.integer()` on double characters to round them to 
 the next integer? Why (not)? What other ways are there to do the rounding?
 
-# Exercise 2: Define a function
+# Exercise 3: Define a function
 
 Create functions that take a vector as input and returns:
 
@@ -36,15 +53,16 @@ Create functions that take a vector as input and returns:
 
 3. Only even numbers.
     
-> Hint: Use the operation `x %% y` to get the remainder from diving `x` by `y`, the so called 'modulo y'. For even numbers, the modulo 2 is zero.
+> Hint: Use the operation `x %% y` to get the remainder from diving `x` by `y`, 
+the so called 'modulo y'. For even numbers, the modulo 2 is zero.
 
 Apply your function to the following example vector:
 
 ```{r}
-ex_2_vec <- c(1, -8, 99, 3, NA, 3, -0.5)
+ex_3_vec <- c(1, -8, 99, 3, NA, 3, -0.5)
 ```
 
-# Exercise 3: Lists
+# Exercise 4: Lists
 
 1. Create a list that contains three elements called `'a'`, `'b'` and `'c'`.
 The first element should correspond to a double vector with the elements
@@ -57,7 +75,7 @@ The third element should contain three times the entry `FALSE`.
 get information about the respective structure. How do the results differ?
 
 
-# Exercise 4: Data frames and the study semester distribution at EUF
+# Exercise 5: Data frames and the study semester distribution at EUF
 
 The package `DataScienceExercises` contains a data set called `EUFstudentsemesters`,
 which contains information about the distribution of study semesters of 

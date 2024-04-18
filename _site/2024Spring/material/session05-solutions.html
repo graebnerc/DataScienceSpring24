@@ -220,10 +220,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exercise-1-basic-object-types" id="toc-exercise-1-basic-object-types" class="nav-link active" data-scroll-target="#exercise-1-basic-object-types">Exercise 1: Basic object types</a></li>
-  <li><a href="#exercise-2-define-a-function" id="toc-exercise-2-define-a-function" class="nav-link" data-scroll-target="#exercise-2-define-a-function">Exercise 2: Define a function</a></li>
-  <li><a href="#exercise-3-lists" id="toc-exercise-3-lists" class="nav-link" data-scroll-target="#exercise-3-lists">Exercise 3: Lists</a></li>
-  <li><a href="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf" id="toc-exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="nav-link" data-scroll-target="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf">Exercise 4: Data frames and the study semester distribution at EUF</a></li>
+  <li><a href="#exercise-1-basic-object-types-i" id="toc-exercise-1-basic-object-types-i" class="nav-link active" data-scroll-target="#exercise-1-basic-object-types-i">Exercise 1: Basic object types I</a></li>
+  <li><a href="#exercise-2-basic-object-types-ii" id="toc-exercise-2-basic-object-types-ii" class="nav-link" data-scroll-target="#exercise-2-basic-object-types-ii">Exercise 2: Basic object types II</a></li>
+  <li><a href="#exercise-3-define-a-function" id="toc-exercise-3-define-a-function" class="nav-link" data-scroll-target="#exercise-3-define-a-function">Exercise 3: Define a function</a></li>
+  <li><a href="#exercise-4-lists" id="toc-exercise-4-lists" class="nav-link" data-scroll-target="#exercise-4-lists">Exercise 4: Lists</a></li>
+  <li><a href="#exercise-5-data-frames-and-the-study-semester-distribution-at-euf" id="toc-exercise-5-data-frames-and-the-study-semester-distribution-at-euf" class="nav-link" data-scroll-target="#exercise-5-data-frames-and-the-study-semester-distribution-at-euf">Exercise 5: Data frames and the study semester distribution at EUF</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="session05-solutions.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -257,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">17 04 2024</p>
+      <p class="date-modified">18 04 2024</p>
     </div>
   </div>
     
@@ -266,17 +267,86 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="exercise-1-basic-object-types" class="level1">
-<h1>Exercise 1: Basic object types</h1>
+<section id="exercise-1-basic-object-types-i" class="level1">
+<h1>Exercise 1: Basic object types I</h1>
+<ol type="1">
+<li>Create a vector containing the numbers <code>2</code>, <code>5</code>, <code>2.4</code> and <code>11</code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex1_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>, <span class="fl">2.4</span>, <span class="dv">11</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Replace the second element with <code>5.9</code>.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ex1_vec[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fl">5.9</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ex1_vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  2.0  5.9  2.4 11.0</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Add the elements <code>3</code> and <code>1</code> to the beginning, and the elements <code>"8.0"</code> and <code>"9.2"</code> to the end of the vector.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>va_1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>va_2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"8.0"</span>, <span class="st">"9.2"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>ex1_vec_extended <span class="ot">&lt;-</span> <span class="fu">c</span>(va_1, ex1_vec, va_2)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>ex1_vec_extended</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "3"   "1"   "2"   "5.9" "2.4" "11"  "8.0" "9.2"</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Create a vector with the numbers from -8 to 9 (step size: 0.5)</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ex1_vec_4 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">9</span>, <span class="at">by =</span> <span class="fl">0.5</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>ex1_vec_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] -8.0 -7.5 -7.0 -6.5 -6.0 -5.5 -5.0 -4.5 -4.0 -3.5 -3.0 -2.5 -2.0 -1.5 -1.0
+[16] -0.5  0.0  0.5  1.0  1.5  2.0  2.5  3.0  3.5  4.0  4.5  5.0  5.5  6.0  6.5
+[31]  7.0  7.5  8.0  8.5  9.0</code></pre>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Compute the square root of each element of the first vector using vectorisation.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(ex1_vec_4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in sqrt(ex1_vec_4): NaNs produced</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+ [8]       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+[15]       NaN       NaN 0.0000000 0.7071068 1.0000000 1.2247449 1.4142136
+[22] 1.5811388 1.7320508 1.8708287 2.0000000 2.1213203 2.2360680 2.3452079
+[29] 2.4494897 2.5495098 2.6457513 2.7386128 2.8284271 2.9154759 3.0000000</code></pre>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Create a character vector containing then strings <code>"Number_1"</code> to <code>"Number_5"</code>. Use suitable helper functions to create this vector quickly.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>ex1_char_vec <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"Number_"</span>, <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">5</span>))</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>ex1_char_vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Number_1" "Number_2" "Number_3" "Number_4" "Number_5"</code></pre>
+</div>
+</div>
+</section>
+<section id="exercise-2-basic-object-types-ii" class="level1">
+<h1>Exercise 2: Basic object types II</h1>
 <p>Consider the following vector:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex_1_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.9</span>, <span class="st">"2"</span>, <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>ex_2_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.9</span>, <span class="st">"2"</span>, <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li>What is the type of this vector? Why?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(ex_1_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(ex_2_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "character"</code></pre>
 </div>
@@ -288,12 +358,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>integer</code></li>
 <li><code>logical</code></li>
 </ol>
-<p>Therefore, the type of <code>ex_1_vec</code> is <code>character</code>. The underlying reason is that you can, for instance, always transform a <code>double</code> value into a <code>character</code> but not vice versa.</p>
+<p>Therefore, the type of <code>ex_2_vec</code> is <code>character</code>. The underlying reason is that you can, for instance, always transform a <code>double</code> value into a <code>character</code> but not vice versa.</p>
 <ol start="2" type="1">
 <li>What happens if you coerce this vector into type integer? Why?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(ex_1_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(ex_2_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
@@ -306,18 +376,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What does <code>sum(is.na(x))</code> tell you about a vector <code>x</code>? What is happening here?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="cn">NA</span>,<span class="cn">NA</span>,<span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="cn">NA</span>,<span class="cn">NA</span>,<span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>First, <code>is.na(x)</code> creates a vector with logical values indicating whether a value of the original vector is missing (i.e.&nbsp;<code>NA</code>):</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE FALSE FALSE  TRUE  TRUE FALSE</code></pre>
 </div>
 </div>
 <p>Then, <code>sum()</code> computes the sum over this vecor of boolean values:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -328,40 +398,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <p>No, because <code>as.integer()</code> is not acutally rounding numbers (as, for example, <code>as.integer(2.1)</code> would make you think), but only removing the decimal part of the number:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">2.9</span>) <span class="co"># you might expect 2...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">2.9</span>) <span class="co"># you might expect 2...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
 <p>Better use <code>round()</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">2.9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">2.9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
 </section>
-<section id="exercise-2-define-a-function" class="level1">
-<h1>Exercise 2: Define a function</h1>
+<section id="exercise-3-define-a-function" class="level1">
+<h1>Exercise 3: Define a function</h1>
 <p>Create functions that take a vector as input and returns:</p>
 <ol type="1">
 <li>The last value.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>get_last_val <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  last_val <span class="ot">&lt;-</span> x[<span class="fu">length</span>(x)]</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(last_val)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>get_last_val <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  last_val <span class="ot">&lt;-</span> x[<span class="fu">length</span>(x)]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(last_val)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Every element except the last value and any missing values.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>get_beginning <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  beginning <span class="ot">&lt;-</span> x[<span class="sc">-</span><span class="fu">length</span>(x)]</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  beginning_nonas <span class="ot">&lt;-</span> beginning[<span class="sc">!</span><span class="fu">is.na</span>(beginning)]</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(beginning_nonas)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>} </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>get_beginning <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  beginning <span class="ot">&lt;-</span> x[<span class="sc">-</span><span class="fu">length</span>(x)]</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  beginning_nonas <span class="ot">&lt;-</span> beginning[<span class="sc">!</span><span class="fu">is.na</span>(beginning)]</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(beginning_nonas)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>} </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Only even numbers.</li>
@@ -370,64 +440,64 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Hint: Use the operation <code>x %% y</code> to get the remainder from diving <code>x</code> by <code>y</code>, the so called ‘modulo y’. For even numbers, the modulo 2 is zero.</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>get_even <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  even_nbs <span class="ot">&lt;-</span> x[x<span class="sc">%%</span><span class="dv">2</span><span class="sc">==</span><span class="dv">0</span>]</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  even_nbs_nonas <span class="ot">&lt;-</span> even_nbs[<span class="sc">!</span><span class="fu">is.na</span>(even_nbs)]</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(even_nbs)</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>get_even <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  even_nbs <span class="ot">&lt;-</span> x[x<span class="sc">%%</span><span class="dv">2</span><span class="sc">==</span><span class="dv">0</span>]</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  even_nbs_nonas <span class="ot">&lt;-</span> even_nbs[<span class="sc">!</span><span class="fu">is.na</span>(even_nbs)]</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(even_nbs)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Apply your function to the following example vector:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>ex_2_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="fl">0.5</span>, <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>ex_3_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="fl">0.5</span>, <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_last_val</span>(ex_2_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_last_val</span>(ex_3_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_beginning</span>(ex_2_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_beginning</span>(ex_3_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  1.0 -8.0 99.0  3.0  4.0 -0.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_even</span>(ex_2_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">get_even</span>(ex_3_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -8 NA  4 50</code></pre>
 </div>
 </div>
 </section>
-<section id="exercise-3-lists" class="level1">
-<h1>Exercise 3: Lists</h1>
+<section id="exercise-4-lists" class="level1">
+<h1>Exercise 4: Lists</h1>
 <ol type="1">
 <li>Create a list that contains three elements called <code>'a'</code>, <code>'b'</code> and <code>'c'</code>. The first element should correspond to a double vector with the elements <code>1.5</code>, <code>-2.9</code> and <code>99</code>. The second element should correspond to a character vector with the elments <code>'Hello'</code>, <code>'3'</code>, and <code>'EUF'</code>. The third element should contain three times the entry <code>FALSE</code>.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>ex_3_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'a'</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">1.5</span>, <span class="sc">-</span><span class="fl">2.9</span>, <span class="dv">99</span>),</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'b'</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">'Hello'</span>, <span class="st">"'3'"</span>, <span class="st">'EUF'</span>),</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">'c'</span> <span class="ot">=</span> <span class="fu">rep</span>(<span class="cn">FALSE</span>, <span class="dv">3</span>)</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>ex_4_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">'a'</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">1.5</span>, <span class="sc">-</span><span class="fl">2.9</span>, <span class="dv">99</span>),</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'b'</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">'Hello'</span>, <span class="st">"'3'"</span>, <span class="st">'EUF'</span>),</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">'c'</span> <span class="ot">=</span> <span class="fu">rep</span>(<span class="cn">FALSE</span>, <span class="dv">3</span>)</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Transform this list into a <code>data.frame</code> and a <code>tibble</code>. Then apply <code>str()</code> to get information about the respective structure. How do the results differ?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>ex_3_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(ex_3_list)</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>ex_3_tb <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">as_tibble</span>(ex_3_list)</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_3_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>ex_4_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(ex_4_list)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>ex_4_tb <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">as_tibble</span>(ex_4_list)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_4_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 3
  $ a: num [1:3] 1.5 -2.9 99
  $ b: chr [1:3] "Hello" "'3'" "EUF"
  $ c: logi [1:3] FALSE FALSE FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_3_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_4_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   3 obs. of  3 variables:
  $ a: num  1.5 -2.9 99
  $ b: chr  "Hello" "'3'" "EUF"
  $ c: logi  FALSE FALSE FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_3_tb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(ex_4_tb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>tibble [3 × 3] (S3: tbl_df/tbl/data.frame)
  $ a: num [1:3] 1.5 -2.9 99
@@ -437,26 +507,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><code>str()</code> only differs with regard to the first line describing the type.</p>
 </section>
-<section id="exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="level1">
-<h1>Exercise 4: Data frames and the study semester distribution at EUF</h1>
+<section id="exercise-5-data-frames-and-the-study-semester-distribution-at-euf" class="level1">
+<h1>Exercise 5: Data frames and the study semester distribution at EUF</h1>
 <p>The package <code>DataScienceExercises</code> contains a data set called <code>EUFstudentsemesters</code>, which contains information about the distribution of study semesters of enrolled students at the EUF in 2021. You can shortcut the data set as follows:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>euf_semesters <span class="ot">&lt;-</span> DataScienceExercises<span class="sc">::</span>EUFstudentsemesters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>euf_semesters <span class="ot">&lt;-</span> DataScienceExercises<span class="sc">::</span>EUFstudentsemesters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li>What happens if you extract the column with study semesters as a vector and transform it into a <code>double</code>?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(euf_semesters[[<span class="st">"Semester"</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(euf_semesters[[<span class="st">"Semester"</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "6"           "4"           "2"           "8"           "9 or higher"
 [6] "7"           "5"           "3"           "1"          </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>semesters <span class="ot">&lt;-</span> <span class="fu">as.double</span>(euf_semesters[[<span class="st">"Semester"</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>semesters <span class="ot">&lt;-</span> <span class="fu">as.double</span>(euf_semesters[[<span class="st">"Semester"</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(semesters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(semesters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  6  4  2  8 NA  7  5  3  1</code></pre>
 </div>
@@ -466,7 +536,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What is the average study semester of those students being in their 8th or earlier semester?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(semesters, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(semesters, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.177026</code></pre>
 </div>
@@ -475,7 +545,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>How many students are in their 9th or higher study semester?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(euf_semesters<span class="sc">$</span>Semester<span class="sc">==</span><span class="st">"9 or higher"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(euf_semesters<span class="sc">$</span>Semester<span class="sc">==</span><span class="st">"9 or higher"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 469</code></pre>
 </div>
@@ -484,7 +554,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What does <code>typeof(euf_semesters)</code> return and why?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(euf_semesters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(euf_semesters)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "list"</code></pre>
 </div>

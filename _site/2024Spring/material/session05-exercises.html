@@ -220,10 +220,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exercise-1-basic-object-types" id="toc-exercise-1-basic-object-types" class="nav-link active" data-scroll-target="#exercise-1-basic-object-types">Exercise 1: Basic object types</a></li>
-  <li><a href="#exercise-2-define-a-function" id="toc-exercise-2-define-a-function" class="nav-link" data-scroll-target="#exercise-2-define-a-function">Exercise 2: Define a function</a></li>
-  <li><a href="#exercise-3-lists" id="toc-exercise-3-lists" class="nav-link" data-scroll-target="#exercise-3-lists">Exercise 3: Lists</a></li>
-  <li><a href="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf" id="toc-exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="nav-link" data-scroll-target="#exercise-4-data-frames-and-the-study-semester-distribution-at-euf">Exercise 4: Data frames and the study semester distribution at EUF</a></li>
+  <li><a href="#exercise-1-basic-object-types-i" id="toc-exercise-1-basic-object-types-i" class="nav-link active" data-scroll-target="#exercise-1-basic-object-types-i">Exercise 1: Basic object types I</a></li>
+  <li><a href="#exercise-2-basic-object-types-ii" id="toc-exercise-2-basic-object-types-ii" class="nav-link" data-scroll-target="#exercise-2-basic-object-types-ii">Exercise 2: Basic object types II</a></li>
+  <li><a href="#exercise-3-define-a-function" id="toc-exercise-3-define-a-function" class="nav-link" data-scroll-target="#exercise-3-define-a-function">Exercise 3: Define a function</a></li>
+  <li><a href="#exercise-4-lists" id="toc-exercise-4-lists" class="nav-link" data-scroll-target="#exercise-4-lists">Exercise 4: Lists</a></li>
+  <li><a href="#exercise-5-data-frames-and-the-study-semester-distribution-at-euf" id="toc-exercise-5-data-frames-and-the-study-semester-distribution-at-euf" class="nav-link" data-scroll-target="#exercise-5-data-frames-and-the-study-semester-distribution-at-euf">Exercise 5: Data frames and the study semester distribution at EUF</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="session05-exercises.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -256,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">17 04 2024</p>
+      <p class="date-modified">18 04 2024</p>
     </div>
   </div>
     
@@ -265,11 +266,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="exercise-1-basic-object-types" class="level1">
-<h1>Exercise 1: Basic object types</h1>
+<section id="exercise-1-basic-object-types-i" class="level1">
+<h1>Exercise 1: Basic object types I</h1>
+<ol type="1">
+<li><p>Create a vector containing the numbers <code>2</code>, <code>5</code>, <code>2.4</code> and <code>11</code>.</p></li>
+<li><p>Replace the second element with <code>5.9</code>.</p></li>
+<li><p>Add the elements <code>3</code> and <code>1</code> to the beginning, and the elements <code>"8.0"</code> and <code>"9.2"</code> to the end of the vector.</p></li>
+<li><p>Create a vector with the numbers from -8 to 9 (step size: 0.5)</p></li>
+<li><p>Compute the square root of each element of the first vector using vectorisation.</p></li>
+<li><p>Create a character vector containing then strings <code>"Number_1"</code> to <code>"Number_5"</code>. Use suitable helper functions to create this vector quickly.</p></li>
+</ol>
+</section>
+<section id="exercise-2-basic-object-types-ii" class="level1">
+<h1>Exercise 2: Basic object types II</h1>
 <p>Consider the following vector:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex_1_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"2"</span>, <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex_2_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"2"</span>, <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li><p>What is the type of this vector? Why?</p></li>
@@ -278,8 +290,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Is it a good idea to use <code>as.integer()</code> on double characters to round them to the next integer? Why (not)? What other ways are there to do the rounding?</p></li>
 </ol>
 </section>
-<section id="exercise-2-define-a-function" class="level1">
-<h1>Exercise 2: Define a function</h1>
+<section id="exercise-3-define-a-function" class="level1">
+<h1>Exercise 3: Define a function</h1>
 <p>Create functions that take a vector as input and returns:</p>
 <ol type="1">
 <li><p>The last value.</p></li>
@@ -291,18 +303,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 <p>Apply your function to the following example vector:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ex_2_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">3</span>, <span class="sc">-</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ex_3_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">99</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">3</span>, <span class="sc">-</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-3-lists" class="level1">
-<h1>Exercise 3: Lists</h1>
+<section id="exercise-4-lists" class="level1">
+<h1>Exercise 4: Lists</h1>
 <ol type="1">
 <li><p>Create a list that contains three elements called <code>'a'</code>, <code>'b'</code> and <code>'c'</code>. The first element should correspond to a double vector with the elements <code>1.5</code>, <code>-2.9</code> and <code>99</code>. The second element should correspond to a character vector with the elments <code>'Hello'</code>, <code>'3'</code>, and <code>'EUF'</code>. The third element should contain three times the entry <code>FALSE</code>.</p></li>
 <li><p>Transform this list into a <code>data.frame</code> and a <code>tibble</code>. Then apply <code>str()</code> to get information about the respective structure. How do the results differ?</p></li>
 </ol>
 </section>
-<section id="exercise-4-data-frames-and-the-study-semester-distribution-at-euf" class="level1">
-<h1>Exercise 4: Data frames and the study semester distribution at EUF</h1>
+<section id="exercise-5-data-frames-and-the-study-semester-distribution-at-euf" class="level1">
+<h1>Exercise 5: Data frames and the study semester distribution at EUF</h1>
 <p>The package <code>DataScienceExercises</code> contains a data set called <code>EUFstudentsemesters</code>, which contains information about the distribution of study semesters of enrolled students at the EUF in 2021. You can shortcut the data set as follows:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>euf_semesters <span class="ot">&lt;-</span> DataScienceExercises<span class="sc">::</span>EUFstudentsemesters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
