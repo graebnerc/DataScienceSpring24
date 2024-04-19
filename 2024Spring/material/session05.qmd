@@ -21,7 +21,6 @@ This is basically a step-by-step solution to the first function exercise of the
 :::
 
 
-
 ## 🎥 Lecture videos 
 
 There will be no videos for recap sessions.
@@ -29,7 +28,19 @@ There will be no videos for recap sessions.
 ## 📚 Suggested Reading
 
 - Read again the tutorial on [functions](/2024Spring/tutorials/obj-types-i-functions/index.qmd) 
-- Look at these mini function [exercises]() and the corresponding [solutions]() (TBA)
+- I added more mini exercises for defining functions to the package `DataScienceExercises`
+as part of the new exercise package `Functions`
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises on functions
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "Functions", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
 
 ## ✍️ Coursework
 

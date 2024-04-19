@@ -106,4 +106,17 @@ learnr::run_tutorial(
 ```
 :::
 
+- Do the `Functions` exercises of the package `DataScienceExercises` 
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "Functions", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
+
 - If you have questions or problems, please post them in the Moodle forum

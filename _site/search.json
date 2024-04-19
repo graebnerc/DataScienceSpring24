@@ -284,7 +284,7 @@
     "href": "2024Spring/material/index.html#session-specific-material",
     "title": "Material overview",
     "section": "🔖 Session-specific material",
-    "text": "🔖 Session-specific material\n\n\n\n\n\n\nHow to use the exercise codes?\n\n\n\n\n\nFor information on how to use the exercise code, read this tutorial.\n\n\n\n\n\n\nSession\nTopic\nSlides\nExercise code\n\n\n\n\n1\nGeneral introduction\nSlides\n\n\n\n2\nBasics of R and R-Studio\nSlides\nBasics\n\n\n3\nBasic objects\nSlides\nObjectTypes1\n\n\n4\nAdvanced objects\nSlides\nObjectTypes2\n\n\n5\nRecap & practice\n\n\n\n\n6\nVisualization\nSlides\nVisualization1\n\n\n7\nProject management and data import\nSlides\nProjectOrga\n\n\n8 & 9\nData wrangling\nSlides\nWrangling1, Wrangling2\n\n\n10\nExploratory data analysis (recap)\nSlides\n\n\n\n11\nQuarto/R Markdown\nSlides\nQuarto\n\n\n12\nRecap & practice\nNA\n\n\n\n13\nIntroduction to data analysis\nSlides\n\n\n\n14\nSampling\nSlides\nSampling\n\n\n15\nSimple linear Regression\nSlides\nLinearRegression1\n\n\n16\nMultiple linear Regression\nSlides\nLinearRegression2"
+    "text": "🔖 Session-specific material\n\n\n\n\n\n\nHow to use the exercise codes?\n\n\n\n\n\nFor information on how to use the exercise code, read this tutorial.\n\n\n\n\n\n\nSession\nTopic\nSlides\nExercise code\n\n\n\n\n1\nGeneral introduction\nSlides\n\n\n\n2\nBasics of R and R-Studio\nSlides\nBasics, Functions\n\n\n3\nBasic objects\nSlides\nObjectTypes1\n\n\n4\nAdvanced objects\nSlides\nObjectTypes2\n\n\n5\nRecap & practice\n\n\n\n\n6\nVisualization\nSlides\nVisualization1\n\n\n7\nProject management and data import\nSlides\nProjectOrga\n\n\n8 & 9\nData wrangling\nSlides\nWrangling1, Wrangling2\n\n\n10\nExploratory data analysis (recap)\nSlides\n\n\n\n11\nQuarto/R Markdown\nSlides\nQuarto\n\n\n12\nRecap & practice\nNA\n\n\n\n13\nIntroduction to data analysis\nSlides\n\n\n\n14\nSampling\nSlides\nSampling\n\n\n15\nSimple linear Regression\nSlides\nLinearRegression1\n\n\n16\nMultiple linear Regression\nSlides\nLinearRegression2"
   },
   {
     "objectID": "2024Spring/index.html",
@@ -697,6 +697,6 @@
     "href": "2024Spring/material/session05.html#suggested-reading",
     "title": "🗓️ Session 5: Recap and practice",
     "section": "📚 Suggested Reading",
-    "text": "📚 Suggested Reading\n\nRead again the tutorial on functions\nLook at these mini function exercises and the corresponding solutions (TBA)"
+    "text": "📚 Suggested Reading\n\nRead again the tutorial on functions\nI added more mini exercises for defining functions to the package DataScienceExercises as part of the new exercise package Functions\n\n\n\n\n\n\n\nQuick code for starting the exercises on functions\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Functions\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   }
 ]
