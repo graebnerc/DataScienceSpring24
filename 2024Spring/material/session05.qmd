@@ -11,15 +11,25 @@ one week before this session.
 
 ## 👨‍🏫 Lecture Slides 
 
-Will be posted after the session.
+There were no slides used during this session.
+
+::: {.callout-tip collapse="true"}
+## Script for the function example we were using
+This is basically a step-by-step solution to the first function exercise of the
+`Basics` exercise collection in the package `DataScienceExercises`.
+<script src="https://gist.github.com/graebnerc/908de56b52a28fda6fe5acb14393942d.js"></script>
+:::
+
+
 
 ## 🎥 Lecture videos 
 
 There will be no videos for recap sessions.
 
-## 📚 Mandatory Reading
+## 📚 Suggested Reading
 
-TBD 
+- Read again the tutorial on [functions](/2024Spring/tutorials/obj-types-i-functions/index.qmd) 
+- Look at these mini function [exercises]() and the corresponding [solutions]() (TBA)
 
 ## ✍️ Coursework
 
