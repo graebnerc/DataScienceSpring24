@@ -29,6 +29,10 @@ Either click on the slide area below or click
 </div>
 ```
 
+::: {.callout-tip collapse="true"}
+## The R script of this session
+<script src="https://gist.github.com/graebnerc/a3c11735652a0e4927ec71d4efadce09.js"></script>
+:::
 
 ## 🎥 Lecture videos 
 
