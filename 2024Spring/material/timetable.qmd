@@ -9,60 +9,36 @@ execute:
 
 # Tentative outline
 
+::: {.callout-important collapse="false"}
+## 📢 Important change! (26.04.2024)
 
-::: {.callout-important collapse=false}
-## 📢 Important change! (18.04.2024)
-
-- 🗓️ The mid term exam was removed and an additional recap session added tomorrow!
-
+-   🗓️Timing of lectures after visualization adjusted.
 :::
 
-+--------+--------------+---------+--------------------------------------------------------+
-| **\#** | **Date**     | **Day** | **Topic**                                              |
-+========+==============+=========+========================================================+
-| 1      | 14.03.24     | Thu     | General introduction and installation                  |
-+--------+--------------+---------+--------------------------------------------------------+
-| 2      | 21.03.24     | Thu     | Introducing the basics of R and R Studio               |
-+--------+--------------+---------+--------------------------------------------------------+
-| 3      | 28.03.24     | Thu     | Basic object types in R (learning video)               |
-+--------+--------------+---------+--------------------------------------------------------+
-| 4      | 11.04.24     | Thu     | Advanced object types in R (learning video)            |
-+--------+--------------+---------+--------------------------------------------------------+
-| 5      | 18.04.24     | Thu     | Recap and practice                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 6      | 19.04.24     | Fri     | Recap and practice                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 7      | 25.04.24     | Thu     | Data visualization                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 8      | 26.04.24     | Fri     | Project Management and data import                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 9      | 02.-03.05.24 | Thu     | Video lectures on data wrangling.                      |
-+--------+--------------+---------+--------------------------------------------------------+
-| 10     | 09.05.24     | Thu     | Explorative data analysis in practice                  |
-+--------+--------------+---------+--------------------------------------------------------+
-| NN     | 10.05.24     | Fri     | No lecture due to Christi Himmelfahrt                  |
-+--------+--------------+---------+--------------------------------------------------------+
-| 11     | 16.05.24     | Thu     | Introducing Quarto and R Markdown                      |
-+--------+--------------+---------+--------------------------------------------------------+
-| 12     | 17.05.24     | Fri     | Recap and practice                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 13     | 23.05.24     | Thu     | Introduction to data analytics                         |
-+--------+--------------+---------+--------------------------------------------------------+
-| 14     | 30.05.24     | Thu.    | Sampling theory                                        |
-+--------+--------------+---------+--------------------------------------------------------+
-| 15     | 31.05.24     | Fri     | Simple linear regression                               |
-+--------+--------------+---------+--------------------------------------------------------+
-| 16     | 06.06.24     | Thu     | Recap and practice                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| 17     | 07.06.24     | Fri     | Multiple linear regression I                           |
-+--------+--------------+---------+--------------------------------------------------------+
-| 18     | 13.06.24     | Thu     | Multiple linear regression II                          |
-+--------+--------------+---------+--------------------------------------------------------+
-| 19     | 14.06.24     | Fri     | Selected machine learning tools                        |
-+--------+--------------+---------+--------------------------------------------------------+
-| 20     | 20.06.24     | Thu     | Open topic                                             |
-+--------+--------------+---------+--------------------------------------------------------+
-| 21     | 21.06.24     | Fri     | Recap and practice                                     |
-+--------+--------------+---------+--------------------------------------------------------+
-| **NN** | **28.06.23** | **Mon** | **Final exam; 10:00 – 11:30, MAD 130**                 |
-+--------+--------------+---------+--------------------------------------------------------+
+| **\#** | **Date**        | **Day** | **Topic**                                        |
+|------------|------------|------------|------------------------------------|
+| 1      | 14.03.24        | Thu     | General introduction and installation            |
+| 2      | 21.03.24        | Thu     | Introducing the basics of R and R Studio         |
+| 3      | 28.03.24        | Thu     | Basic object types in R (learning video)         |
+| 4      | 11.04.24        | Thu     | Advanced object types in R (learning video)      |
+| 5      | 18.04.24        | Thu     | Recap and practice                               |
+| 6      | 19.04.24        | Fri     | Recap and practice                               |
+| 7      | 25.04.24        | Thu     | Data visualization                               |
+| 8      | 26.04.24        | Fri     | Finish data visualization and Project Management |
+| 9      | 02.05.24        | Thu     | Data import                                      |
+| 10     | 03.05.24        | Fri     | Video lectures on data wrangling.                |
+| 11     | 09.05.24        | Thu     | Recap and practice: explorative data analysis    |
+| NN     | 10.05.24        | Fri     | No lecture due to Christi Himmelfahrt            |
+| 12     | 16.05.24        | Thu     | Introducing Quarto and R Markdown                |
+| 13     | 17.05.24        | Fri     | Recap and practice                               |
+| 14     | 23.05.24        | Thu     | Introduction to data analytics                   |
+| 15     | 30.05.24        | Thu     | Sampling theory                                  |
+| 16     | 31.05.24        | Fri     | Simple linear regression                         |
+| 17     | 06.06.24        | Thu     | Recap and practice                               |
+| 18     | 07.06.24        | Fri     | Multiple linear regression I                     |
+| 19     | 13.06.24        | Thu     | Multiple linear regression II                    |
+| 20     | 14.06.24        | Fri     | Selected machine learning tools                  |
+| 21     | 20.06.24        | Thu     | Open topic                                       |
+| 22     | 21.06.24        | Fri     | Recap and practice                               |
+| **NN** | **28.06.23**    | **Mon** | **Final exam; 10:00 – 11:30, MAD 130**           |
+| NN     | 2nd exam period | TBD     | Re-take exam for all who failed the first exam   |
