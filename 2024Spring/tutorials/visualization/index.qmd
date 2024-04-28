@@ -272,7 +272,7 @@ the axes can be defined by the functions `scale_*_**()`, where the first
 `*` should be replaced by the aesthetic we want to adjust, and the second by 
 a keyword indicating whether the variable is discrete or continuous, or whether
 we want to provide fully manual specifications. In our case we are interested 
-in changing the `x`-axis, which represents a continuous variable (USD).
+in changing the `x`-axis, which represents a continuous variable (GDP).
 Thus we call `scale_x_continuous()`. Since we want to change the labels on the
 axis we specify the argument `labels`. To scale the labels we make use of a
 function from the `scales`-package: `scales::number_format()`.
