@@ -268,11 +268,11 @@ gdp_plot
 
 So far, so good. The `x`-axis is a bit clumsy, though. It would be better
 to scale the number down so that it shows 1000 dollars. The scale properties of 
-the axess can be defined by the functions `scale_*_**()`, where the first 
-`*` should be replaced by the aethetic we want to adjust, and the second by 
-a keyword indivating whether the variable is discrete or continuous, or whether
+the axes can be defined by the functions `scale_*_**()`, where the first 
+`*` should be replaced by the aesthetic we want to adjust, and the second by 
+a keyword indicating whether the variable is discrete or continuous, or whether
 we want to provide fully manual specifications. In our case we are interested 
-in changing the `x`-axis, which represents a continuous variable (years).
+in changing the `x`-axis, which represents a continuous variable (USD).
 Thus we call `scale_x_continuous()`. Since we want to change the labels on the
 axis we specify the argument `labels`. To scale the labels we make use of a
 function from the `scales`-package: `scales::number_format()`.
@@ -510,7 +510,7 @@ gdp_dyn_plot
 
 Much of the code above only requires slight adjustments: the scaling of the
 `x`-axis should now be applied to the `y`-axis so we change 
-`ggplot2::scale_x_continuous()` into `ggplot2::scale_x_continuous()`.
+`ggplot2::scale_x_continuous()` into `ggplot2::scale_y_continuous()`.
 Moreover, colors should change not for the `fill` but the `color` aesthetic,
 so `ggplot2::scale_fill_brewer()` becomes `ggplot2::scale_color_brewer()`:
 
