@@ -1,5 +1,5 @@
 ---
-title: "🗓️ Session 5: Recap and practice"
+title: "🗓️ Sessions 5 and 6: Recap and practice"
 date: "2024-04-18"
 date-modified: last-modified
 ---

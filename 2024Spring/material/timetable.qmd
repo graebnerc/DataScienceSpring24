@@ -10,6 +10,12 @@ execute:
 # Tentative outline
 
 ::: {.callout-important collapse="false"}
+## 📢 Important change! (01.05.2024)
+
+-   🗓️Lecture on data import will be a video lecture.
+:::
+
+::: {.callout-important collapse="false"}
 ## 📢 Important change! (26.04.2024)
 
 -   🗓️Timing of lectures after visualization adjusted.
@@ -25,7 +31,7 @@ execute:
 | 6      | 19.04.24        | Fri     | Recap and practice                               |
 | 7      | 25.04.24        | Thu     | Data visualization                               |
 | 8      | 26.04.24        | Fri     | Finish data visualization and Project Management |
-| 9      | 02.05.24        | Thu     | Data import                                      |
+| 9      | 02.05.24        | Thu     | Data import (video lecture)                      |
 | 10     | 03.05.24        | Fri     | Video lectures on data wrangling.                |
 | 11     | 09.05.24        | Thu     | Recap and practice: explorative data analysis    |
 | NN     | 10.05.24        | Fri     | No lecture due to Christi Himmelfahrt            |
