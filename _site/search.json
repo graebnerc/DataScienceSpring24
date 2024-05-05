@@ -238,48 +238,6 @@
     "text": "✍️ Coursework\nDuring the first 60 minutes of the session you will work on this sheet in groups of three people. Please use only one computer but develop the solutions together. In the remaining 30 minutes we will go through your solutions and discuss problems. I will post my own solutions online after the session, but urge to first try to come up with solutions on your own.\n\nExercise sheet for this session\nR file template for your solutions\nPossible solutions to the exercises"
   },
   {
-    "objectID": "2024Spring/material/session06.html",
-    "href": "2024Spring/material/session06.html",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "",
-    "text": "One area for which R is particulary well-known for is the area of visualization. This is particularly because of the package ggplot2. This session introduces ggplot2 and the general approach to generate visualization in R. The good thing is that if you follow the approach described here, you can basically create every visualization type you can think of."
-  },
-  {
-    "objectID": "2024Spring/material/session06.html#lecture-slides",
-    "href": "2024Spring/material/session06.html#lecture-slides",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\n\n\n\n\n\nThe R script of this session"
-  },
-  {
-    "objectID": "2024Spring/material/session06.html#lecture-videos",
-    "href": "2024Spring/material/session06.html#lecture-videos",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "🎥 Lecture videos",
-    "text": "🎥 Lecture videos\nCurrently, no videos are available for this session. Check out the tutorial instead."
-  },
-  {
-    "objectID": "2024Spring/material/session06.html#mandatory-reading",
-    "href": "2024Spring/material/session06.html#mandatory-reading",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "📚 Mandatory Reading",
-    "text": "📚 Mandatory Reading\n\nThe tutorial visualization"
-  },
-  {
-    "objectID": "2024Spring/material/session06.html#further-reading",
-    "href": "2024Spring/material/session06.html#further-reading",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nWickham (2010), who introduces the theory underlying ggplot2\nggplot2 cheat sheet\nBrowse the website from Data to Viz and try to re-create some of the figures yourself"
-  },
-  {
-    "objectID": "2024Spring/material/session06.html#coursework",
-    "href": "2024Spring/material/session06.html#coursework",
-    "title": "🗓️ Session 6: Visualization",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises Visualization1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Visualization1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
-  },
-  {
     "objectID": "2024Spring/material/session07.html",
     "href": "2024Spring/material/session07.html",
     "title": "🗓️ Session 7: Visualization",
@@ -322,9 +280,93 @@
     "text": "✍️ Coursework\n\nDo the exercises Visualization1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Visualization1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   },
   {
-    "objectID": "2024Spring/material/session07.html#footnotes",
-    "href": "2024Spring/material/session07.html#footnotes",
-    "title": "🗓️ Session 7: Project management and data import",
+    "objectID": "2024Spring/material/session08.html",
+    "href": "2024Spring/material/session08.html",
+    "title": "🗓️ Session 8: Project management",
+    "section": "",
+    "text": "This is one of the most underestimated topics. In this session you learn how to adequately set up your working environment on your computer. This means where you should save which files, which directory structure you should use, and how to point the computer to other files on your computer. While this sounds boring at first, taking seriously the insights from this session will save you tons of hours of frustration in the future!"
+  },
+  {
+    "objectID": "2024Spring/material/session08.html#lecture-slides",
+    "href": "2024Spring/material/session08.html#lecture-slides",
+    "title": "🗓️ Session 8: Project management",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session08.html#lecture-videos",
+    "href": "2024Spring/material/session08.html#lecture-videos",
+    "title": "🗓️ Session 8: Project management",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nCurrently, no videos are available for this session. Check out the tutorial on project setup instead."
+  },
+  {
+    "objectID": "2024Spring/material/session08.html#mandatory-reading",
+    "href": "2024Spring/material/session08.html#mandatory-reading",
+    "title": "🗓️ Session 8: Project management",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nThe tutorial Setting up an R project"
+  },
+  {
+    "objectID": "2024Spring/material/session08.html#further-reading",
+    "href": "2024Spring/material/session08.html#further-reading",
+    "title": "🗓️ Session 8: Project management",
+    "section": "Further Reading",
+    "text": "Further Reading\nWhile we do not cover this in this course, I highly recommend learning the version control system Git. Personally, I can recommend the following:\n\nVery concise introduction to Git\nIntroduction to GitHub: GitHub skills and the official docs"
+  },
+  {
+    "objectID": "2024Spring/material/session08.html#coursework",
+    "href": "2024Spring/material/session08.html#coursework",
+    "title": "🗓️ Session 8: Project management",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package that refer to setting up an R project\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html",
+    "href": "2024Spring/material/session09.html",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "",
+    "text": "This is also one of the most underestimated topics. This session builds upon the previous session on setting up a project environment. Now you will learn how to import data obtained elsewhere into R. We focus on importing .csv files, but with the skills acquired in this context you will face no difficulties in importing other data types as well."
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#lecture-slides",
+    "href": "2024Spring/material/session09.html#lecture-slides",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\nData for the exercises"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#lecture-videos",
+    "href": "2024Spring/material/session09.html#lecture-videos",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nAll the videos are available via this playlist.\n\n\n\n\n\n\nExpand to access the videos directly"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#mandatory-reading",
+    "href": "2024Spring/material/session09.html#mandatory-reading",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nThe tutorial Importing and exporting data using data.table"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#further-reading",
+    "href": "2024Spring/material/session09.html#further-reading",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "Further Reading",
+    "text": "Further Reading\nTBA"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#coursework",
+    "href": "2024Spring/material/session09.html#coursework",
+    "title": "🗓️ Session 9: Importing data",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDownload data about the CO2 emissions for some countries of your choice from the World Bank website for the years 2000 to 2020. Set up an R project, save the data, import it, and make a line graph.\n\nZIP file with a possible solution1"
+  },
+  {
+    "objectID": "2024Spring/material/session09.html#footnotes",
+    "href": "2024Spring/material/session09.html#footnotes",
+    "title": "🗓️ Session 9: Importing data",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nYou can ignore the make_co2_data.R for now and only look at make_co2_plot.R.↩︎"
   },
@@ -698,96 +740,5 @@
     "title": "Quarto exercises",
     "section": "",
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
-  },
-  {
-    "objectID": "2024Spring/material/session08.html",
-    "href": "2024Spring/material/session08.html",
-    "title": "🗓️ Session 8: Project management",
-    "section": "",
-    "text": "This is one of the most underestimated topics. In this session you learn how to adequately set up your working environment on your computer. This means where you should save which files, which directory structure you should use, and how to point the computer to other files on your computer. While this sounds boring at first, taking seriously the insights from this session will save you tons of hours of frustration in the future!"
-  },
-  {
-    "objectID": "2024Spring/material/session08.html#lecture-slides",
-    "href": "2024Spring/material/session08.html#lecture-slides",
-    "title": "🗓️ Session 8: Project management",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
-  },
-  {
-    "objectID": "2024Spring/material/session08.html#lecture-videos",
-    "href": "2024Spring/material/session08.html#lecture-videos",
-    "title": "🗓️ Session 8: Project management",
-    "section": "🎥 Lecture videos",
-    "text": "🎥 Lecture videos\nCurrently, no videos are available for this session. Check out the tutorial on project setup instead."
-  },
-  {
-    "objectID": "2024Spring/material/session08.html#mandatory-reading",
-    "href": "2024Spring/material/session08.html#mandatory-reading",
-    "title": "🗓️ Session 8: Project management",
-    "section": "📚 Mandatory Reading",
-    "text": "📚 Mandatory Reading\n\nThe tutorial Setting up an R project"
-  },
-  {
-    "objectID": "2024Spring/material/session08.html#further-reading",
-    "href": "2024Spring/material/session08.html#further-reading",
-    "title": "🗓️ Session 8: Project management",
-    "section": "Further Reading",
-    "text": "Further Reading\nWhile we do not cover this in this course, I highly recommend learning the version control system Git. Personally, I can recommend the following:\n\nVery concise introduction to Git\nIntroduction to GitHub: GitHub skills and the official docs"
-  },
-  {
-    "objectID": "2024Spring/material/session08.html#coursework",
-    "href": "2024Spring/material/session08.html#coursework",
-    "title": "🗓️ Session 8: Project management",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html",
-    "href": "2024Spring/material/session09.html",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "",
-    "text": "This is also one of the most underestimated topics. This session builds upon the previous session on setting up a project environment. Now you will learn how to import data obtained elsewhere into R. We focus on importing .csv files, but with the skills acquired in this context you will face no difficulties in importing other data types as well."
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#lecture-slides",
-    "href": "2024Spring/material/session09.html#lecture-slides",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\nData for the exercises"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#lecture-videos",
-    "href": "2024Spring/material/session09.html#lecture-videos",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "🎥 Lecture videos",
-    "text": "🎥 Lecture videos\nAll the videos are available via this playlist.\n\n\n\n\n\n\nExpand to access the videos directly"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#mandatory-reading",
-    "href": "2024Spring/material/session09.html#mandatory-reading",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "📚 Mandatory Reading",
-    "text": "📚 Mandatory Reading\n\nThe tutorial Importing and exporting data using data.table"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#further-reading",
-    "href": "2024Spring/material/session09.html#further-reading",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "Further Reading",
-    "text": "Further Reading\nTBA"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#coursework",
-    "href": "2024Spring/material/session09.html#coursework",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDownload data about the CO2 emissions for some countries of your choice from the World Bank website for the years 2000 to 2020. Set up an R project, save the data, import it, and make a line graph.\n\nZIP file with a possible solution1"
-  },
-  {
-    "objectID": "2024Spring/material/session09.html#footnotes",
-    "href": "2024Spring/material/session09.html#footnotes",
-    "title": "🗓️ Session 9: Importing data",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nYou can ignore the make_co2_data.R for now and only look at make_co2_plot.R.↩︎"
   }
 ]
