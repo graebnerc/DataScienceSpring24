@@ -1,5 +1,5 @@
 ---
-title: Data wrangling # Also check out line 43
+title: Data preparation # Also check out line 43
 author: Claudius Gräbner-Radkowitsch
 date: '2024-04-26'
 documentclass: scrartcl
@@ -42,7 +42,7 @@ format:
         \usepackage[headsepline, footsepline]{scrlayer-scrpage}
         \pagestyle{scrheadings}
         \clearpairofpagestyles
-        \ihead{Tutorial: Data wrangling}
+        \ihead{Tutorial: Data preparation}
         %\chead{Kopfzeile Mitte}
         \ohead{\pagemark} %
         \ifoot{}
