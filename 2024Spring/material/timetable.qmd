@@ -10,6 +10,12 @@ execute:
 # Tentative outline
 
 ::: {.callout-important collapse="false"}
+## 📢 Important change! (07.05.2024)
+
+-   🗓️ Dates for 09.05. and 10.05. were mixed up.
+:::
+
+::: {.callout-important collapse="false"}
 ## 📢 Important change! (06.05.2024)
 
 -   🗓️Sessions 11 and 12 switched.
@@ -27,8 +33,8 @@ execute:
 | 8      | 26.04.24        | Fri     | Finish data visualization and Project Management |
 | 9      | 02.05.24        | Thu     | Data import (video lecture)                      |
 | 10     | 03.05.24        | Fri     | Video lectures on data wrangling.                |
-| NN     | 10.05.24        | Fri     | No lecture due to Christi Himmelfahrt            |
-| 11     | 09.05.24        | Thu     | Introducing Quarto and R Markdown                |
+| NN     | 09.05.24        | Thu     | No lecture due to Christi Himmelfahrt            |
+| 11     | 10.05.24        | Fri     | Introducing Quarto and R Markdown                |
 | 12     | 16.05.24        | Thu     | Recap and practice: Visualization & data preparation    |
 | 13     | 17.05.24        | Fri     | Recap and practice: explorative data analysis    |
 | 14     | 23.05.24        | Thu     | Introduction to data analytics                   |
