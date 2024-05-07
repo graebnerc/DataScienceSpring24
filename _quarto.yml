@@ -50,6 +50,8 @@ website:
            text: Session 09
          - href: 2024Spring/material/session10.qmd
            text: Session 10
+         - href: 2024Spring/material/session11.qmd
+           text: Session 11
       - href: 2024Spring/tutorials.qmd
         text: "💻 Tutorials"
 
