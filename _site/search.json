@@ -782,5 +782,47 @@
     "title": "Quarto exercises",
     "section": "",
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
+  },
+  {
+    "objectID": "2024Spring/material/session11.html",
+    "href": "2024Spring/material/session11.html",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "",
+    "text": "Quarto is a modern multi-language version of R Markdown. As with its predessessor, the idea is to provide people with the opportunity to write text and code into the very same document. This makes the creation of nice looking and reproducible reports or paper very easy. Moreoever, with Quarto it is very easy to create very nice papers, reports, websites or interactive apps. This website, for example, is fully written in Quarto. In this lecture, you learn everything you need to get started with writing your first Quarto documents. In fact, its really straighforward once you get the basic idea."
+  },
+  {
+    "objectID": "2024Spring/material/session11.html#lecture-slides",
+    "href": "2024Spring/material/session11.html#lecture-slides",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\nDesasterMarkdown.pdf\nNicerMarkdown.pdf\n\n\n\n\n\n\n\nCode for the markdown desaster and a possible solution"
+  },
+  {
+    "objectID": "2024Spring/material/session11.html#lecture-videos",
+    "href": "2024Spring/material/session11.html#lecture-videos",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session11.html#mandatory-reading",
+    "href": "2024Spring/material/session11.html#mandatory-reading",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nThe CommonMark markdown tutorial\nQuarto tutorial I: the basics\nQuarto tutorial II: computations\nQuarto tutorial III: authoring quarto documents"
+  },
+  {
+    "objectID": "2024Spring/material/session11.html#further-reading",
+    "href": "2024Spring/material/session11.html#further-reading",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nBlog introducing Quarto\nQuarto and R Markdown\nThe comprehensive Quarto documentation\nMarkdown basics\nThe R Markdown Cookbook"
+  },
+  {
+    "objectID": "2024Spring/material/session11.html#coursework",
+    "href": "2024Spring/material/session11.html#coursework",
+    "title": "🗓️ Session 11: A very short introduction to Quarto",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nDo the exercises Quarto from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Quarto\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDo the following practical exercise:\n\n\n\n\n\n\n\nExercise description\n\n\n\n\n\nCreate a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. &gt; Note: For Netlify Drop to work, the html file must be called `index.html```!\nKnit the document to PDF and make sure that it includes a table of contents.\n\n\n\n\n\n\n\n\n\n\nPossible solution"
   }
 ]
