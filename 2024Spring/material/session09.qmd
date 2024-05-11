@@ -109,8 +109,4 @@ learnr::run_tutorial(
   shiny_args=list("launch.browser"=TRUE))
 ```
 :::
-- Download data about the CO2 emissions for some countries of your choice from
-the World Bank [website](https://data.worldbank.org/indicator/EN.ATM.CO2E.PC)
-for the years 2000 to 2020. Set up an R project, save the data, import it, and
-make a line graph.
-    - [ZIP file](/2024Spring/material/session07-solution.zip) with a possible solution^[You can ignore the `make_co2_data.R` for now and only look at `make_co2_plot.R`.]
+

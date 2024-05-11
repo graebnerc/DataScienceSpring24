@@ -361,7 +361,7 @@
     "href": "2024Spring/material/session09.html#coursework",
     "title": "🗓️ Session 9: Importing data",
     "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDownload data about the CO2 emissions for some countries of your choice from the World Bank website for the years 2000 to 2020. Set up an R project, save the data, import it, and make a line graph.\n\nZIP file with a possible solution1"
+    "text": "✍️ Coursework\n\nDo the exercises ProjectOrga from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"ProjectOrga\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   },
   {
     "objectID": "2024Spring/material/session09.html#footnotes",
@@ -410,7 +410,7 @@
     "href": "2024Spring/material/session10.html#coursework",
     "title": "🗓️ Session 10: Data preparation",
     "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises Wrangling1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Wrangling1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nIf you want more exercises on the challenge of making data longer/wider, you can do the exercises Wrangling2 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Wrangling2\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
+    "text": "✍️ Coursework\n\nDo the exercises Wrangling1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Wrangling1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDownload data about the CO2 emissions for some countries of your choice from the World Bank website for the years 2000 to 2020. Set up an R project, save the data, import it, and make a line graph.\n\nZIP file with a possible solution1\n\nIf you want more exercises on the challenge of making data longer/wider, you can do the exercises Wrangling2 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Wrangling2\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   },
   {
     "objectID": "2024Spring/material/timetable.html",
@@ -824,5 +824,12 @@
     "title": "🗓️ Session 11: A very short introduction to Quarto",
     "section": "✍️ Coursework",
     "text": "✍️ Coursework\n\nDo the exercises Quarto from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Quarto\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))\n\n\n\n\n\nDo the following practical exercise:\n\n\n\n\n\n\n\nExercise description\n\n\n\n\n\nCreate a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. &gt; Note: For Netlify Drop to work, the html file must be called `index.html```!\nKnit the document to PDF and make sure that it includes a table of contents.\n\n\n\n\n\n\n\n\n\n\nPossible solution"
+  },
+  {
+    "objectID": "2024Spring/material/session10.html#footnotes",
+    "href": "2024Spring/material/session10.html#footnotes",
+    "title": "🗓️ Session 10: Data preparation",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nYou can ignore the make_co2_data.R for now and only look at make_co2_plot.R.↩︎"
   }
 ]
