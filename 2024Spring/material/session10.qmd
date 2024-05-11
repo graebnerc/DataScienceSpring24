@@ -35,6 +35,7 @@ Either click on the slide area below or click
 ::: {.callout-tip collapse="true"}
 ## Data and solutions to the intermediate exercises
 
+- [Data used in the video](DataWranglingVideo.zip)
 - [Data for exercises](DataPrepExData.zip)
 
 <script src="https://gist.github.com/graebnerc/029ca3b65025478f19f75ebfda2c1292.js"></script>
