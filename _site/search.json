@@ -831,5 +831,40 @@
     "title": "🗓️ Session 10: Data preparation",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nYou can ignore the make_co2_data.R for now and only look at make_co2_plot.R.↩︎"
+  },
+  {
+    "objectID": "2024Spring/material/session12.html",
+    "href": "2024Spring/material/session12.html",
+    "title": "🗓️ Sessions 12 and 13: Recap and practice",
+    "section": "",
+    "text": "This session is about recap and practice. We will do exercises on topics that you suggest, and recap concepts you found particularly hard to grasp. To this end, make sure you communicate your preferences on topics via Moodle until one week before this session."
+  },
+  {
+    "objectID": "2024Spring/material/session12.html#lecture-slides",
+    "href": "2024Spring/material/session12.html#lecture-slides",
+    "title": "🗓️ Sessions 12 and 13: Recap and practice",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nThere were no slides used during this session."
+  },
+  {
+    "objectID": "2024Spring/material/session12.html#lecture-videos",
+    "href": "2024Spring/material/session12.html#lecture-videos",
+    "title": "🗓️ Sessions 12 and 13: Recap and practice",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nThere will be no videos for recap sessions."
+  },
+  {
+    "objectID": "2024Spring/material/session12.html#exercises-for-the-class",
+    "href": "2024Spring/material/session12.html#exercises-for-the-class",
+    "title": "🗓️ Sessions 12 and 13: Recap and practice",
+    "section": "✍️ Exercises for the class",
+    "text": "✍️ Exercises for the class\nI suggest you create one R project environment for all the exercises of this  session.\n\nSolving the CO2 exercise from session 10 together\nDownload data about the CO2 emissions for some countries of your choice from the World Bank website for the years 2000 to 2020. Set up an R project, save the data, import it, and make a line graph.\n\n\nData wrangling I\nDownload and import the following data set on education spending and income.\nCompute, for each country, the percentage change of the spending from the year 2010 to the year 2020 and save this as a variable called perc_change.\n\nHint: The equation to compute the percentage change of a variable \\(X\\) from \\(t=1\\) to \\(t=2\\) is as follows:\n\n\\[g_X = \\frac{X_{t=2}-X_{t=1}}{X_{t=1}}\\cdot 100\\]\nSave the new data set under a useful name in an adequate location.\n\n\nData wrangling II\nUse the same data set as in the exercise before.\nCompute for each income group the average expense of education (in percentage of their GDP) over the whole period. Make sure missing values are ignored.\nSave the new data set under a useful name in an adequate location.\n\n\nVisualization and Quarto\nCreate a Quarto document and make sure that the following applies:\n\nYour name is set as the author of the file\nYour document is rendered to html format\nThe title of the file is “Sessions 12 and 13: Recap and Practice”\nSections are numbered\nThere is a table of contents at the beginning of the document\n\nThen read in the following data set on GDP per capita and child mortality.\nSummarize the data per country such that you have one mean value for child mortality and GDP per capita for each country (ignoring missing values).\nCreate a scatter plot, in which the y axis shows child mortality and the x axis GDP per capita.\nThen create a second scatter plot, in which the variiable on the axis is transformed using the natural logarithm (using the R function log()).\nIn your rendered quarto document, there should be no R code visible, only the output. Also, warnings and messages should not be visible."
+  },
+  {
+    "objectID": "2024Spring/material/session12.html#suggested-reading",
+    "href": "2024Spring/material/session12.html#suggested-reading",
+    "title": "🗓️ Sessions 12 and 13: Recap and practice",
+    "section": "📚 Suggested Reading",
+    "text": "📚 Suggested Reading\n\nTutorial on using the WDI package (TBA)\n…"
   }
 ]
