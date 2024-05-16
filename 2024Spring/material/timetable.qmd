@@ -10,15 +10,9 @@ execute:
 # Tentative outline
 
 ::: {.callout-important collapse="false"}
-## 📢 Important change! (07.05.2024)
+## 📢 Important change! (16.05.2024)
 
--   🗓️ Dates for 09.05. and 10.05. were mixed up.
-:::
-
-::: {.callout-important collapse="false"}
-## 📢 Important change! (06.05.2024)
-
--   🗓️Sessions 11 and 12 switched.
+-   🗓️Adjusting times after May 17; especially: no lecture on May 23!
 :::
 
 | **\#** | **Date**        | **Day** | **Topic**                                        |
@@ -36,15 +30,19 @@ execute:
 | NN     | 09.05.24        | Thu     | No lecture due to Christi Himmelfahrt            |
 | 11     | 10.05.24        | Fri     | Introducing Quarto and R Markdown                |
 | 12     | 16.05.24        | Thu     | Recap and practice: Visualization & data preparation    |
-| 13     | 17.05.24        | Fri     | Recap and practice: explorative data analysis    |
-| 14     | 23.05.24        | Thu     | Introduction to data analytics                   |
-| 15     | 30.05.24        | Thu     | Sampling theory                                  |
-| 16     | 31.05.24        | Fri     | Simple linear regression                         |
-| 17     | 06.06.24        | Thu     | Recap and practice                               |
-| 18     | 07.06.24        | Fri     | Multiple linear regression I                     |
-| 19     | 13.06.24        | Thu     | Multiple linear regression II                    |
-| 20     | 14.06.24        | Fri     | Selected machine learning tools                  |
-| 21     | 20.06.24        | Thu     | Open topic                                       |
-| 22     | 21.06.24        | Fri     | Recap and practice                               |
-| **NN** | **28.06.23**    | **Mon** | **Final exam; 10:00 – 11:30, MAD 130**           |
+| 13     | 30.05.24        | Fri     | Recap and practice: explorative data analysis    |
+| 14     | 31.05.24        | Thu     | Introduction to data analytics                   |
+| 15     | 06.06.24        | Thu     | Sampling theory                                  |
+| 16     | 07.06.24        | Fri     | Simple linear regression                         |
+| 17     | 13.06.24        | Thu     | Recap and practice                               |
+| 18     | 14.06.24        | Fri     | Multiple linear regression I                     |
+| 19     | 20.06.24        | Thu     | Multiple linear regression II                    |
+| 20     | 21.06.24        | Fri     | Recap and practice                               |
+| **NN** | **27.06.24**    | **Mon** | **Final exam; 14:00 – 16:00, HEL 063**           |
 | NN     | 2nd exam period | TBD     | Re-take exam for all who failed the first exam   |
+
+<!--
+
+| 20     |         | Fri     | Selected machine learning tools                  |
+| 21     |         | Thu     | Open topic                                       |
+-->
