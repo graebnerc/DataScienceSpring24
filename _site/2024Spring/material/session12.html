@@ -302,12 +302,13 @@ This is basically a step-by-step solution to the first function exercise of the
 <p><strong>Hint:</strong> The equation to compute the percentage change of a variable <span class="math inline">\(X\)</span> from <span class="math inline">\(t=1\)</span> to <span class="math inline">\(t=2\)</span> is as follows:</p>
 </blockquote>
 <p><span class="math display">\[g_X = \frac{X_{t=2}-X_{t=1}}{X_{t=1}}\cdot 100\]</span></p>
+<p>Filter the data set such that there are no entries with a missing value in the variable <code>perc_change</code>.</p>
 <p>Save the new data set under a useful name in an adequate location.</p>
 </section>
 <section id="data-wrangling-ii" class="level3">
 <h3 class="anchored" data-anchor-id="data-wrangling-ii">Data wrangling II</h3>
 <p>Use the same data set as in the exercise before.</p>
-<p>Compute for each income group the average expense of education (in percentage of their GDP) over the whole period. Make sure missing values are ignored.</p>
+<p>Compute for each income group the average expense of education over the whole period. Make sure missing values are ignored.</p>
 <p>Save the new data set under a useful name in an adequate location.</p>
 </section>
 <section id="visualization-and-quarto" class="level3">
@@ -323,13 +324,14 @@ This is basically a step-by-step solution to the first function exercise of the
 <p>Then read in the following <a href="session12-material/child_mortality.csv">data set</a> on GDP per capita and child mortality.</p>
 <p>Summarize the data per country such that you have one mean value for child mortality and GDP per capita for each country (ignoring missing values).</p>
 <p>Create a scatter plot, in which the y axis shows child mortality and the x axis GDP per capita.</p>
-<p>Then create a second scatter plot, in which the variiable on the axis is transformed using the natural logarithm (using the R function <code>log()</code>).</p>
+<p>Then create a second scatter plot, in which both variables are transformed using the natural logarithm (using the R function <code>log()</code>).</p>
 <p>In your rendered quarto document, there should be no R code visible, only the output. Also, warnings and messages should not be visible.</p>
 </section>
 </section>
 <section id="suggested-reading" class="level2">
 <h2 class="anchored" data-anchor-id="suggested-reading">📚 Suggested Reading</h2>
 <ul>
+<li><a href="">Solutions to all the exercises</a> (TBA)</li>
 <li>Tutorial on using the WDI package (TBA)</li>
 <li>…</li>
 </ul>

@@ -52,6 +52,9 @@ $t=1$ to $t=2$ is as follows:
 
 $$g_X = \frac{X_{t=2}-X_{t=1}}{X_{t=1}}\cdot 100$$
 
+Filter the data set such that there are no entries with a missing value in the
+variable `perc_change`.
+
 Save the new data set under a useful name in an adequate location.
 
 ### Data wrangling II
@@ -59,8 +62,8 @@ Save the new data set under a useful name in an adequate location.
 Use the same data set as in the exercise before.
 
 Compute for each income group the average expense of education
-(in percentage of their GDP) over the whole period. Make sure missing
-values are ignored.
+over the whole period. Make sure missing
+values are ignored. 
 
 Save the new data set under a useful name in an adequate location.
 
@@ -84,7 +87,7 @@ child mortality and GDP per capita for each country (ignoring missing values).
 Create a scatter plot, in which the y axis shows child mortality and the x axis 
 GDP per capita.
 
-Then create a second scatter plot, in which the variiable on the axis is 
+Then create a second scatter plot, in which both variables are
 transformed using the natural logarithm (using the R function `log()`).
 
 In your rendered quarto document, there should be no R code visible, only the 
@@ -93,5 +96,6 @@ output. Also, warnings and messages should not be visible.
 
 ## 📚 Suggested Reading
 
+- [Solutions to all the exercises]() (TBA)
 - Tutorial on using the WDI package (TBA) 
 - ...
