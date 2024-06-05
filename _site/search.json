@@ -494,7 +494,7 @@
     "href": "2024Spring/material/timetable.html",
     "title": "Seminar timetable",
     "section": "",
-    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (16.05.2024)\n\n\n\n\n\n\n🗓️Adjusting times after May 17; especially: no lecture on May 23!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\n14\n31.05.24\nFri\nIntroduction to data analytics\n\n\n15\n06.06.24\nThu\nSampling theory\n\n\n16\n07.06.24\nFri\nSimple linear regression\n\n\n17\n13.06.24\nThu\nRecap and practice\n\n\n18\n14.06.24\nFri\nMultiple linear regression I\n\n\n19\n20.06.24\nThu\nMultiple linear regression II\n\n\n20\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
+    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (16.05.2024)\n\n\n\n\n\n\n🗓️Adjusting times after May 17; especially: no lecture on May 23!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\nNN\n31.05.24\nFri\nCancelled\n\n\n14\n06.06.24\nThu\nIntroduction to data analysis\n\n\n15\n07.06.24\nFri\nSampling theory\n\n\n16\n13.06.24\nThu\nSimple linear regression\n\n\n17\n14.06.24\nFri\nMultiple linear regression I\n\n\n18\n20.06.24\nThu\nMultiple linear regression II\n\n\n19\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
   },
   {
     "objectID": "2024Spring/material/session12-material/session12-solutions.html",
@@ -866,5 +866,89 @@
     "title": "Quarto exercises",
     "section": "",
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html",
+    "href": "2024Spring/material/session14.html",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "",
+    "text": "In this theoretical lecture, we will discuss key concepts in data analysis The aim is to give you an overview of the different types of data analysis and which techniques can be used in which context. In addition, the basic vocabulary is clarified so that you don’t get lost in the jungle of buzzwords that exists in the context of ‘data science’."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#lecture-slides",
+    "href": "2024Spring/material/session14.html#lecture-slides",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#lecture-videos",
+    "href": "2024Spring/material/session14.html#lecture-videos",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#mandatory-reading",
+    "href": "2024Spring/material/session14.html#mandatory-reading",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nIntroduction and Section 2.1. in James et al. (2021)."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#further-reading",
+    "href": "2024Spring/material/session14.html#further-reading",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nBlog introducing Quarto\nQuarto and R Markdown\nThe comprehensive Quarto documentation\nMarkdown basics\nThe R Markdown Cookbook"
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#coursework",
+    "href": "2024Spring/material/session14.html#coursework",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nAnswer the recap questions from the last slide"
+  },
+  {
+    "objectID": "2024Spring/material/session15.html",
+    "href": "2024Spring/material/session15.html",
+    "title": "🗓️ Session 15",
+    "section": "",
+    "text": "TBD"
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#lecture-slides",
+    "href": "2024Spring/material/session15.html#lecture-slides",
+    "title": "🗓️ Session 15",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#lecture-videos",
+    "href": "2024Spring/material/session15.html#lecture-videos",
+    "title": "🗓️ Session 15",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#mandatory-reading",
+    "href": "2024Spring/material/session15.html#mandatory-reading",
+    "title": "🗓️ Session 15",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading"
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#further-reading",
+    "href": "2024Spring/material/session15.html#further-reading",
+    "title": "🗓️ Session 15",
+    "section": "Further Reading",
+    "text": "Further Reading"
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#coursework",
+    "href": "2024Spring/material/session15.html#coursework",
+    "title": "🗓️ Session 15",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework"
   }
 ]

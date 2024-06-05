@@ -1,0 +1,68 @@
+---
+title: "🗓️ Session 15"
+date: "2024-06-07"
+date-modified: last-modified
+---
+
+TBD
+
+
+## 👨‍🏫 Lecture Slides 
+
+Either click on the slide area below or click 
+[here](/2024Spring/material/slides/T15-XXX.pdf) to download the slides.
+
+<!---
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T15-XXX.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
+::: {.callout-tip collapse="true"}
+## Code for the markdown desaster and a possible solution
+
+<script src="https://gist.github.com/graebnerc/44b82add84b1d5cb89d28574ae89ed02.js"></script>
+
+:::
+--->
+
+## 🎥 Lecture videos 
+
+So far, there are no learning videos available for this lecture. 
+
+## 📚 Mandatory Reading
+<!---
+- [The CommonMark markdown tutorial](https://commonmark.org/help/tutorial/)
+- [Quarto tutorial I: the basics](https://quarto.org/docs/get-started/hello/rstudio.html)
+- [Quarto tutorial II: computations](https://quarto.org/docs/get-started/computations/rstudio.html)
+- [Quarto tutorial III: authoring quarto documents](https://quarto.org/docs/get-started/authoring/rstudio.html)
+--->
+## Further Reading
+<!---
+- [Blog introducing Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
+- [Quarto and R Markdown](https://yihui.org/en/2022/04/quarto-r-markdown/)
+- [The comprehensive Quarto documentation](https://quarto.org/docs/guide/)
+- [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+- [The R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+--->
+## ✍️ Coursework
+<!---
+- Do the exercises `Quarto` from the `DataScienceExercises` package
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+```{r}
+#| eval: false
+learnr::run_tutorial(
+  name = "Quarto", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
+--->

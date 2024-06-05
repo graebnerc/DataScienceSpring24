@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Claudius Gräbner-Radkowitsch">
-<meta name="dcterms.date" content="2024-02-28">
 
-<title>Data science using R - Seminar timetable</title>
+<title>Data science using R - 🗓️ Session 15</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../2024Spring/tutorials.html" rel="next">
+<link href="../../2024Spring/material/session14.html" rel="prev">
 <link href="../../figures/icons/course_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -63,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Data science using R - Seminar timetable">
+<meta property="og:title" content="Data science using R - 🗓️ Session 15">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Data science using R">
 </head>
@@ -94,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Seminar timetable</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../2024Spring/material/index.html">🗓️ Material</a></li><li class="breadcrumb-item"><a href="../../2024Spring/material/session15.html">Session 15</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -201,13 +202,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../2024Spring/material/session14.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../../2024Spring/material/session14.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Session 14</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../2024Spring/material/session15.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../../2024Spring/material/session15.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Session 15</span></a>
   </div>
 </li>
@@ -229,7 +230,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tentative-outline" id="toc-tentative-outline" class="nav-link active" data-scroll-target="#tentative-outline">Tentative outline</a></li>
+  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
+  <li><a href="#lecture-videos" id="toc-lecture-videos" class="nav-link" data-scroll-target="#lecture-videos">🎥 Lecture videos</a></li>
+  <li><a href="#mandatory-reading" id="toc-mandatory-reading" class="nav-link" data-scroll-target="#mandatory-reading">📚 Mandatory Reading</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
   </ul>
 </nav>
     </div>
@@ -238,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Seminar timetable</h1>
+<h1 class="title">🗓️ Session 15</h1>
 </div>
 
 
@@ -255,14 +260,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 28, 2024</p>
+      <p class="date">07 06 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">June 5, 2024</p>
+      <p class="date-modified">05 06 2024</p>
     </div>
   </div>
     
@@ -271,188 +276,77 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="tentative-outline" class="level1">
-<h1>Tentative outline</h1>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-📢 Important change! (16.05.2024)
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<ul>
-<li>🗓️Adjusting times after May 17; especially: no lecture on May 23!</li>
-</ul>
-</div>
-</div>
-</div>
-<table class="table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>#</strong></th>
-<th><strong>Date</strong></th>
-<th><strong>Day</strong></th>
-<th><strong>Topic</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>14.03.24</td>
-<td>Thu</td>
-<td>General introduction and installation</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>21.03.24</td>
-<td>Thu</td>
-<td>Introducing the basics of R and R Studio</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>28.03.24</td>
-<td>Thu</td>
-<td>Basic object types in R (learning video)</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>11.04.24</td>
-<td>Thu</td>
-<td>Advanced object types in R (learning video)</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>18.04.24</td>
-<td>Thu</td>
-<td>Recap and practice</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>19.04.24</td>
-<td>Fri</td>
-<td>Recap and practice</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>25.04.24</td>
-<td>Thu</td>
-<td>Data visualization</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>26.04.24</td>
-<td>Fri</td>
-<td>Finish data visualization and Project Management</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>02.05.24</td>
-<td>Thu</td>
-<td>Data import (video lecture)</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>03.05.24</td>
-<td>Fri</td>
-<td>Video lectures on data wrangling.</td>
-</tr>
-<tr class="odd">
-<td>NN</td>
-<td>09.05.24</td>
-<td>Thu</td>
-<td>No lecture due to Christi Himmelfahrt</td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td>10.05.24</td>
-<td>Fri</td>
-<td>Introducing Quarto and R Markdown</td>
-</tr>
-<tr class="odd">
-<td>12</td>
-<td>16.05.24</td>
-<td>Thu</td>
-<td>Recap and practice: Visualization &amp; data preparation</td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>30.05.24</td>
-<td>Thu</td>
-<td>Recap and practice: explorative data analysis</td>
-</tr>
-<tr class="odd">
-<td>NN</td>
-<td>31.05.24</td>
-<td>Fri</td>
-<td>Cancelled</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>06.06.24</td>
-<td>Thu</td>
-<td>Introduction to data analysis</td>
-</tr>
-<tr class="odd">
-<td>15</td>
-<td>07.06.24</td>
-<td>Fri</td>
-<td>Sampling theory</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>13.06.24</td>
-<td>Thu</td>
-<td>Simple linear regression</td>
-</tr>
-<tr class="odd">
-<td>17</td>
-<td>14.06.24</td>
-<td>Fri</td>
-<td>Multiple linear regression I</td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td>20.06.24</td>
-<td>Thu</td>
-<td>Multiple linear regression II</td>
-</tr>
-<tr class="odd">
-<td>19</td>
-<td>21.06.24</td>
-<td>Fri</td>
-<td>Recap and practice</td>
-</tr>
-<tr class="even">
-<td><strong>NN</strong></td>
-<td><strong>27.06.24</strong></td>
-<td><strong>Mon</strong></td>
-<td><strong>Final exam; 14:00 – 16:00, HEL 063</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>NN</strong></td>
-<td><strong>29.08.24</strong></td>
-<td><strong>Thu</strong></td>
-<td><strong>Re-take exam; 14:00 – 16:00, HEL 063</strong></td>
-</tr>
-</tbody>
-</table>
-<p>The re-take exam is only for those who have failed the final exam.</p>
-<!--
+<p>TBD</p>
+<section id="lecture-slides" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
+<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T15-XXX.pdf">here</a> to download the slides.</p>
+<!---
 
-| 20     |         | Fri     | Selected machine learning tools                  |
-| 21     |         | Thu     | Open topic                                       |
--->
+
+```{=html}
+<div class="embed-container">
+  <iframe 
+  src="/2024Spring/material/slides/T15-XXX.pdf" 
+  style="border: 0.5px" 
+  width="80%"
+  height="80%"
+  ></iframe>
+</div>
+```
+
+
+
+::: {.callout-tip collapse="true"}
+## Code for the markdown desaster and a possible solution
+
+<script src="https://gist.github.com/graebnerc/44b82add84b1d5cb89d28574ae89ed02.js"></script>
+
+:::
+--->
+</section>
+<section id="lecture-videos" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-videos">🎥 Lecture videos</h2>
+<p>So far, there are no learning videos available for this lecture.</p>
+</section>
+<section id="mandatory-reading" class="level2">
+<h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
+<!---
+- [The CommonMark markdown tutorial](https://commonmark.org/help/tutorial/)
+- [Quarto tutorial I: the basics](https://quarto.org/docs/get-started/hello/rstudio.html)
+- [Quarto tutorial II: computations](https://quarto.org/docs/get-started/computations/rstudio.html)
+- [Quarto tutorial III: authoring quarto documents](https://quarto.org/docs/get-started/authoring/rstudio.html)
+--->
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<!---
+- [Blog introducing Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
+- [Quarto and R Markdown](https://yihui.org/en/2022/04/quarto-r-markdown/)
+- [The comprehensive Quarto documentation](https://quarto.org/docs/guide/)
+- [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+- [The R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+--->
+</section>
+<section id="coursework" class="level2">
+<h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
+<!---
+- Do the exercises `Quarto` from the `DataScienceExercises` package
+
+::: {.callout-tip collapse="true"}
+## Quick code for starting the exercises
+
+::: {.cell}
+
+```{.r .cell-code}
+learnr::run_tutorial(
+  name = "Quarto", 
+  package = "DataScienceExercises", 
+  shiny_args=list("launch.browser"=TRUE))
+```
+:::
+
+:::
+--->
 
 
 </section>
@@ -705,6 +599,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../2024Spring/material/session14.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Session 14</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../2024Spring/tutorials.html" class="pagination-link">
+        <span class="nav-page-text">💻 Tutorials</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
