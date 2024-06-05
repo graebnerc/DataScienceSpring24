@@ -8,7 +8,7 @@
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Claudius Gräbner-Radkowitsch">
 
-<title>Data science using R - 🗓️ Session 15</title>
+<title>Data science using R - 🗓️ Session 15: Sampling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Data science using R - 🗓️ Session 15">
+<meta property="og:title" content="Data science using R - 🗓️ Session 15: Sampling">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Data science using R">
 </head>
@@ -233,7 +286,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
   <li><a href="#lecture-videos" id="toc-lecture-videos" class="nav-link" data-scroll-target="#lecture-videos">🎥 Lecture videos</a></li>
   <li><a href="#mandatory-reading" id="toc-mandatory-reading" class="nav-link" data-scroll-target="#mandatory-reading">📚 Mandatory Reading</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
   </ul>
 </nav>
@@ -243,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🗓️ Session 15</h1>
+<h1 class="title">🗓️ Session 15: Sampling</h1>
 </div>
 
 
@@ -276,26 +328,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>TBD</p>
+<p>A central concept in data science - and in applied statistics more generally - is that of <em>sampling</em>. This refers to the strategy of using (small) samples to learn about a (large) population. For example, if you wanted to understand the effect of TV advertising on the consumer behaviour of young men in Germany, you could study the whole population of young men in Germany. But since this is usually not feasible, you would rather take a sample of young men, study their behaviour and then generalise to the whole population. In this session we will discuss when and how this is possible. In this context, we will also learn about the concept of <em>Monte Carlo simulations</em> and two central concepts of probability theory underlying applied statistics: the central limit theorem and the law of large numbers, both of which underlie much of modern sampling theory.</p>
 <section id="lecture-slides" class="level2">
 <h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T15-XXX.pdf">here</a> to download the slides.</p>
-<!---
-
-
-```{=html}
+<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T15-Sampling.pdf">here</a> to download the slides.</p>
 <div class="embed-container">
-  <iframe 
-  src="/2024Spring/material/slides/T15-XXX.pdf" 
-  style="border: 0.5px" 
-  width="80%"
-  height="80%"
-  ></iframe>
+  <iframe src="../../2024Spring/material/slides/T15-Sampling.pdf" style="border: 0.5px" width="80%" height="80%"></iframe>
 </div>
-```
-
-
-
+<!---
 ::: {.callout-tip collapse="true"}
 ## Code for the markdown desaster and a possible solution
 
@@ -310,48 +350,47 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="mandatory-reading" class="level2">
 <h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
-<!---
-- [The CommonMark markdown tutorial](https://commonmark.org/help/tutorial/)
-- [Quarto tutorial I: the basics](https://quarto.org/docs/get-started/hello/rstudio.html)
-- [Quarto tutorial II: computations](https://quarto.org/docs/get-started/computations/rstudio.html)
-- [Quarto tutorial III: authoring quarto documents](https://quarto.org/docs/get-started/authoring/rstudio.html)
---->
-</section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<!---
-- [Blog introducing Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)
-- [Quarto and R Markdown](https://yihui.org/en/2022/04/quarto-r-markdown/)
-- [The comprehensive Quarto documentation](https://quarto.org/docs/guide/)
-- [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
-- [The R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
---->
+<ul>
+<li><a href="../../2024Spring/tutorials/mcs/index.html">Tutorial on sampling</a></li>
+<li><a href="https://moderndive.com/7-sampling.html">Chapter 7</a> in <span class="citation" data-cites="moderndive">Ismay and Kim (<a href="#ref-moderndive" role="doc-biblioref">2020</a>)</span>.</li>
+</ul>
 </section>
 <section id="coursework" class="level2">
 <h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
-<!---
-- Do the exercises `Quarto` from the `DataScienceExercises` package
+<ul>
+<li>Do the exercises <code>Sampling</code> from the <code>DataScienceExercises</code> package</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quick code for starting the exercises
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"Sampling"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">package =</span> <span class="st">"DataScienceExercises"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">shiny_args=</span><span class="fu">list</span>(<span class="st">"launch.browser"</span><span class="ot">=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
 
-::: {.callout-tip collapse="true"}
-## Quick code for starting the exercises
-
-::: {.cell}
-
-```{.r .cell-code}
-learnr::run_tutorial(
-  name = "Quarto", 
-  package = "DataScienceExercises", 
-  shiny_args=list("launch.browser"=TRUE))
-```
-:::
-
-:::
---->
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-moderndive" class="csl-entry" role="listitem">
+Ismay, C. and Kim, A. Y.-S. (2020) <em>Statistical inference via data science: A <span>ModernDive</span>, into <span>R</span> and the tidyverse</em>, Boca Raton: <span>CRC Press, Taylor and Francis Group</span>, available at <a href="https://moderndive.com/index.html">https://moderndive.com/index.html</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
