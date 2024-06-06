@@ -490,6 +490,76 @@
     "text": "📚 Suggested Reading\n\nSolutions to all the exercises\nTutorial on using the WDI package (TBA)\n…"
   },
   {
+    "objectID": "2024Spring/material/session14.html",
+    "href": "2024Spring/material/session14.html",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "",
+    "text": "In this theoretical lecture, we will discuss key concepts in data analysis The aim is to give you an overview of the different types of data analysis and which techniques can be used in which context. In addition, the basic vocabulary is clarified so that you don’t get lost in the jungle of buzzwords that exists in the context of ‘data science’."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#lecture-slides",
+    "href": "2024Spring/material/session14.html#lecture-slides",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#lecture-videos",
+    "href": "2024Spring/material/session14.html#lecture-videos",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#mandatory-reading",
+    "href": "2024Spring/material/session14.html#mandatory-reading",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nIntroduction and Section 2.1. in James et al. (2021)."
+  },
+  {
+    "objectID": "2024Spring/material/session14.html#coursework",
+    "href": "2024Spring/material/session14.html#coursework",
+    "title": "🗓️ Session 14: An introduction to data analysis",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nAnswer the recap questions from the last slide"
+  },
+  {
+    "objectID": "2024Spring/material/session15.html",
+    "href": "2024Spring/material/session15.html",
+    "title": "🗓️ Session 15: Sampling",
+    "section": "",
+    "text": "A central concept in data science - and in applied statistics more generally - is that of sampling. This refers to the strategy of using (small) samples to learn about a (large) population. For example, if you wanted to understand the effect of TV advertising on the consumer behaviour of young men in Germany, you could study the whole population of young men in Germany. But since this is usually not feasible, you would rather take a sample of young men, study their behaviour and then generalise to the whole population. In this session we will discuss when and how this is possible. In this context, we will also learn about the concept of Monte Carlo simulations and two central concepts of probability theory underlying applied statistics: the central limit theorem and the law of large numbers, both of which underlie much of modern sampling theory."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#lecture-slides",
+    "href": "2024Spring/material/session15.html#lecture-slides",
+    "title": "🗓️ Session 15: Sampling",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#lecture-videos",
+    "href": "2024Spring/material/session15.html#lecture-videos",
+    "title": "🗓️ Session 15: Sampling",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#mandatory-reading",
+    "href": "2024Spring/material/session15.html#mandatory-reading",
+    "title": "🗓️ Session 15: Sampling",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nTutorial on sampling\nChapter 7 in Ismay and Kim (2020)."
+  },
+  {
+    "objectID": "2024Spring/material/session15.html#coursework",
+    "href": "2024Spring/material/session15.html#coursework",
+    "title": "🗓️ Session 15: Sampling",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nDo the exercises Sampling from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Sampling\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
+  },
+  {
     "objectID": "2024Spring/material/timetable.html",
     "href": "2024Spring/material/timetable.html",
     "title": "Seminar timetable",
@@ -866,89 +936,5 @@
     "title": "Quarto exercises",
     "section": "",
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
-  },
-  {
-    "objectID": "2024Spring/material/session14.html",
-    "href": "2024Spring/material/session14.html",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "",
-    "text": "In this theoretical lecture, we will discuss key concepts in data analysis The aim is to give you an overview of the different types of data analysis and which techniques can be used in which context. In addition, the basic vocabulary is clarified so that you don’t get lost in the jungle of buzzwords that exists in the context of ‘data science’."
-  },
-  {
-    "objectID": "2024Spring/material/session14.html#lecture-slides",
-    "href": "2024Spring/material/session14.html#lecture-slides",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
-  },
-  {
-    "objectID": "2024Spring/material/session14.html#lecture-videos",
-    "href": "2024Spring/material/session14.html#lecture-videos",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "🎥 Lecture videos",
-    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
-  },
-  {
-    "objectID": "2024Spring/material/session14.html#mandatory-reading",
-    "href": "2024Spring/material/session14.html#mandatory-reading",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "📚 Mandatory Reading",
-    "text": "📚 Mandatory Reading\n\nIntroduction and Section 2.1. in James et al. (2021)."
-  },
-  {
-    "objectID": "2024Spring/material/session14.html#further-reading",
-    "href": "2024Spring/material/session14.html#further-reading",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "Further Reading",
-    "text": "Further Reading\n\nBlog introducing Quarto\nQuarto and R Markdown\nThe comprehensive Quarto documentation\nMarkdown basics\nThe R Markdown Cookbook"
-  },
-  {
-    "objectID": "2024Spring/material/session14.html#coursework",
-    "href": "2024Spring/material/session14.html#coursework",
-    "title": "🗓️ Session 14: An introduction to data analysis",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nAnswer the recap questions from the last slide"
-  },
-  {
-    "objectID": "2024Spring/material/session15.html",
-    "href": "2024Spring/material/session15.html",
-    "title": "🗓️ Session 15: Sampling",
-    "section": "",
-    "text": "A central concept in data science - and in applied statistics more generally - is that of sampling. This refers to the strategy of using (small) samples to learn about a (large) population. For example, if you wanted to understand the effect of TV advertising on the consumer behaviour of young men in Germany, you could study the whole population of young men in Germany. But since this is usually not feasible, you would rather take a sample of young men, study their behaviour and then generalise to the whole population. In this session we will discuss when and how this is possible. In this context, we will also learn about the concept of Monte Carlo simulations and two central concepts of probability theory underlying applied statistics: the central limit theorem and the law of large numbers, both of which underlie much of modern sampling theory."
-  },
-  {
-    "objectID": "2024Spring/material/session15.html#lecture-slides",
-    "href": "2024Spring/material/session15.html#lecture-slides",
-    "title": "🗓️ Session 15: Sampling",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
-  },
-  {
-    "objectID": "2024Spring/material/session15.html#lecture-videos",
-    "href": "2024Spring/material/session15.html#lecture-videos",
-    "title": "🗓️ Session 15: Sampling",
-    "section": "🎥 Lecture videos",
-    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
-  },
-  {
-    "objectID": "2024Spring/material/session15.html#mandatory-reading",
-    "href": "2024Spring/material/session15.html#mandatory-reading",
-    "title": "🗓️ Session 15: Sampling",
-    "section": "📚 Mandatory Reading",
-    "text": "📚 Mandatory Reading\n\nTutorial on sampling\nChapter 7 in Ismay and Kim (2020)."
-  },
-  {
-    "objectID": "2024Spring/material/session15.html#further-reading",
-    "href": "2024Spring/material/session15.html#further-reading",
-    "title": "🗓️ Session 15",
-    "section": "Further Reading",
-    "text": "Further Reading"
-  },
-  {
-    "objectID": "2024Spring/material/session15.html#coursework",
-    "href": "2024Spring/material/session15.html#coursework",
-    "title": "🗓️ Session 15: Sampling",
-    "section": "✍️ Coursework",
-    "text": "✍️ Coursework\n\nDo the exercises Sampling from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Sampling\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   }
 ]
