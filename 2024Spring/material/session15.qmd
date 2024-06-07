@@ -1,5 +1,5 @@
 ---
-title: "🗓️ Session 15: Sampling"
+title: "🗓️ Sessions 15 and 16: Sampling"
 date: "2024-06-07"
 date-modified: last-modified
 ---
@@ -33,14 +33,14 @@ Either click on the slide area below or click
 </div>
 ```
 
-<!---
-::: {.callout-tip collapse="true"}
-## Code for the markdown desaster and a possible solution
 
-<script src="https://gist.github.com/graebnerc/44b82add84b1d5cb89d28574ae89ed02.js"></script>
+::: {.callout-tip collapse="true"}
+## Lecture code
+
+<script src="https://gist.github.com/graebnerc/5567989fe275f6eefbe6ea2dafe1a750.js"></script>
 
 :::
---->
+
 
 ## 🎥 Lecture videos 
 

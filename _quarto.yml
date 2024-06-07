@@ -53,11 +53,11 @@ website:
          - href: 2024Spring/material/session11.qmd
            text: Session 11
          - href: 2024Spring/material/session12.qmd
-           text: Session 12-13
+           text: Sessions 12 & 13
          - href: 2024Spring/material/session14.qmd
            text: Session 14
          - href: 2024Spring/material/session15.qmd
-           text: Session 15
+           text: Sessions 15 & 16
       - href: 2024Spring/tutorials.qmd
         text: "💻 Tutorials"
 

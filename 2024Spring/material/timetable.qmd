@@ -10,9 +10,9 @@ execute:
 # Tentative outline
 
 ::: {.callout-important collapse="false"}
-## 📢 Important change! (16.05.2024)
+## 📢 Important change! (07.06.2024)
 
--   🗓️Adjusting times after May 17; especially: no lecture on May 23!
+-   🗓️Adjusting times after sampling session!
 :::
 
 | **\#** | **Date**        | **Day** | **Topic**                                        |
@@ -33,10 +33,10 @@ execute:
 | 13     | 30.05.24        | Thu     | Recap and practice: explorative data analysis    |
 | NN     | 31.05.24        | Fri     | Cancelled                                        |
 | 14     | 06.06.24        | Thu     | Introduction to data analysis                    |
-| 15     | 07.06.24        | Fri     | Sampling theory                                  |
-| 16     | 13.06.24        | Thu     | Simple linear regression                         |
-| 17     | 14.06.24        | Fri     | Multiple linear regression I                     |
-| 18     | 20.06.24        | Thu     | Multiple linear regression II                    |
+| 15     | 07.06.24        | Fri     | Sampling I                                       |
+| 16     | 13.06.24        | Thu     | Sampling II                                      |
+| 17     | 14.06.24        | Fri     | Simple linear regression                         |
+| 18     | 20.06.24        | Thu     | Multiple linear regression                       |
 | 19     | 21.06.24        | Fri     | Recap and practice                               |
 | **NN** | **27.06.24**    | **Mon** | **Final exam; 14:00 – 16:00, HEL 063**           |
 | **NN** | **29.08.24**    | **Thu** | **Re-take exam; 14:00 – 16:00, HEL 063**         |
