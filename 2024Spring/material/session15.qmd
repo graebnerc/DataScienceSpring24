@@ -41,6 +41,10 @@ Either click on the slide area below or click
 
 :::
 
+- [Extensive solution](session15-solution-eufstudents.qmd) for the exercise on the average height of EUF students
+- [Solution](session15-solution-terminology.qmd) for the exercise on terminology
+- Explanation of the [Central Limit Theorem](session15-solution-clt.qmd) and the corresponding exercise
+
 
 ## 🎥 Lecture videos 
 

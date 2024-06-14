@@ -8,7 +8,7 @@
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Claudius Gräbner-Radkowitsch">
 
-<title>Data science using R - 🗓️ Session 16: Linear regresssion</title>
+<title>Data science using R - 🗓️ Sessions 17 &amp; 18: Linear regresssion</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Data science using R - 🗓️ Session 16: Linear regresssion">
+<meta property="og:title" content="Data science using R - 🗓️ Sessions 17 &amp; 18: Linear regresssion">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Data science using R">
 </head>
@@ -95,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../2024Spring/material/index.html">🗓️ Material</a></li><li class="breadcrumb-item"><a href="../../2024Spring/material/session16.html">Sessions 17 &amp; 18</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../2024Spring/material/index.html">🗓️ Material</a></li><li class="breadcrumb-item"><a href="../../2024Spring/material/session17.html">Sessions 17 &amp; 18</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -214,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../2024Spring/material/session16.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../2024Spring/material/session17.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Sessions 17 &amp; 18</span></a>
   </div>
 </li>
@@ -237,6 +290,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
+  <li><a href="#lecture-videos" id="toc-lecture-videos" class="nav-link" data-scroll-target="#lecture-videos">🎥 Lecture videos</a></li>
+  <li><a href="#mandatory-reading" id="toc-mandatory-reading" class="nav-link" data-scroll-target="#mandatory-reading">📚 Mandatory Reading</a>
+  <ul class="collapse">
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">🏆 Further readings</a></li>
+  </ul></li>
+  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
   </ul>
 </nav>
     </div>
@@ -245,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🗓️ Session 16: Linear regresssion</h1>
+<h1 class="title">🗓️ Sessions 17 &amp; 18: Linear regresssion</h1>
 </div>
 
 
@@ -278,55 +337,69 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>TBA</p>
+<p>Simple linear regression is one of the most commonly used methods in inferential statistics or supervised machine learning. It can be used to study the relationship between two numerical variables and make predictions about the values of one of them based on the analysis of a sample. In this session we will discuss when to use linear regression models and where the limitations of this method lie.</p>
 <section id="lecture-slides" class="level2">
 <h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T16-SimpleLinearRegression.pdf">here</a> to download the slides.</p>
+<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T17T18-SimpleLinearRegression.pdf">here</a> to download the slides.</p>
 <div class="embed-container">
-  <iframe src="../../2024Spring/material/slides/T16-SimpleLinearRegression.pdf" style="border: 0.5px" width="80%" height="80%"></iframe>
+  <iframe src="../../2024Spring/material/slides/T17T18-SimpleLinearRegression.pdf" style="border: 0.5px" width="80%" height="80%"></iframe>
 </div>
-<!---
-::: {.callout-tip collapse="true"}
-## Lecture code
+</section>
+<section id="lecture-videos" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-videos">🎥 Lecture videos</h2>
+<p>So far, there are no learning videos available for this lecture.</p>
+</section>
+<section id="mandatory-reading" class="level2">
+<h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
+<ul>
+<li><a href="https://moderndive.com/5-regression.html">Chapter 5</a> in <span class="citation" data-cites="moderndive">Ismay and Kim (<a href="#ref-moderndive" role="doc-biblioref">2020</a>)</span>.</li>
+</ul>
+<section id="further-readings" class="level3">
+<h3 class="anchored" data-anchor-id="further-readings">🏆 Further readings</h3>
+<ul>
+<li><a href="https://www.statlearning.com/">Chapter 3</a> in <span class="citation" data-cites="jamesIntroductionStatisticalLearning2021">James <em>et al.</em> (<a href="#ref-jamesIntroductionStatisticalLearning2021" role="doc-biblioref">2021</a>)</span></li>
+</ul>
+</section>
+</section>
+<section id="coursework" class="level2">
+<h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
+<ul>
+<li>Do the exercises <code>LinearRegression1</code> from the <code>DataScienceExercises</code> package</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quick code for starting the exercises
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"LinearRegression1"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">package =</span> <span class="st">"DataScienceExercises"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">shiny_args=</span><span class="fu">list</span>(<span class="st">"launch.browser"</span><span class="ot">=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
 
-<script src="https://gist.github.com/graebnerc/5567989fe275f6eefbe6ea2dafe1a750.js"></script>
-
-:::
-
-
-## 🎥 Lecture videos 
-
-So far, there are no learning videos available for this lecture. 
-
-## 📚 Mandatory Reading
-
-- [Tutorial on sampling](/2024Spring/tutorials/mcs/index.qmd)
-- [Chapter 7](https://moderndive.com/7-sampling.html) in @moderndive.
-
-## ✍️ Coursework
-
-- Do the exercises `Sampling` from the `DataScienceExercises` package
-
-::: {.callout-tip collapse="true"}
-## Quick code for starting the exercises
-
-::: {.cell}
-
-```{.r .cell-code}
-learnr::run_tutorial(
-  name = "Sampling", 
-  package = "DataScienceExercises", 
-  shiny_args=list("launch.browser"=TRUE))
-```
-:::
-
-:::
---->
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-moderndive" class="csl-entry" role="listitem">
+Ismay, C. and Kim, A. Y.-S. (2020) <em>Statistical inference via data science: A <span>ModernDive</span>, into <span>R</span> and the tidyverse</em>, Boca Raton: <span>CRC Press, Taylor and Francis Group</span>, available at <a href="https://moderndive.com/index.html">https://moderndive.com/index.html</a>.
+</div>
+<div id="ref-jamesIntroductionStatisticalLearning2021" class="csl-entry" role="listitem">
+James, G., Witten, D., Hastie, T. and Tibshirani, R. (2021) <em><a href="https://doi.org/10.1007/978-1-0716-1418-1">An introduction to statistical learning: With applications in <span>R</span></a></em>, Second edition., New York, NY: Springer.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

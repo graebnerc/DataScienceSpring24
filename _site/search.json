@@ -536,7 +536,7 @@
     "href": "2024Spring/material/session15.html#lecture-slides",
     "title": "🗓️ Sessions 15 and 16: Sampling",
     "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\n\n\n\n\n\nLecture code"
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\n\n\n\n\n\nLecture code\n\n\n\n\n\n\n\n\n\n\nExtensive solution for the exercise on the average height of EUF students\nSolution for the exercise on terminology\nExplanation of the Central Limit Theorem and the corresponding exercise"
   },
   {
     "objectID": "2024Spring/material/session15.html#lecture-videos",
@@ -560,11 +560,46 @@
     "text": "✍️ Coursework\n\nDo the exercises Sampling from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"Sampling\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
   },
   {
+    "objectID": "2024Spring/material/session17.html",
+    "href": "2024Spring/material/session17.html",
+    "title": "🗓️ Sessions 17 & 18: Linear regresssion",
+    "section": "",
+    "text": "Simple linear regression is one of the most commonly used methods in inferential statistics or supervised machine learning. It can be used to study the relationship between two numerical variables and make predictions about the values of one of them based on the analysis of a sample. In this session we will discuss when to use linear regression models and where the limitations of this method lie."
+  },
+  {
+    "objectID": "2024Spring/material/session17.html#lecture-slides",
+    "href": "2024Spring/material/session17.html#lecture-slides",
+    "title": "🗓️ Sessions 17 & 18: Linear regresssion",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+  },
+  {
+    "objectID": "2024Spring/material/session17.html#lecture-videos",
+    "href": "2024Spring/material/session17.html#lecture-videos",
+    "title": "🗓️ Sessions 17 & 18: Linear regresssion",
+    "section": "🎥 Lecture videos",
+    "text": "🎥 Lecture videos\nSo far, there are no learning videos available for this lecture."
+  },
+  {
+    "objectID": "2024Spring/material/session17.html#mandatory-reading",
+    "href": "2024Spring/material/session17.html#mandatory-reading",
+    "title": "🗓️ Sessions 17 & 18: Linear regresssion",
+    "section": "📚 Mandatory Reading",
+    "text": "📚 Mandatory Reading\n\nChapter 5 in Ismay and Kim (2020).\n\n\n🏆 Further readings\n\nChapter 3 in James et al. (2021)"
+  },
+  {
+    "objectID": "2024Spring/material/session17.html#coursework",
+    "href": "2024Spring/material/session17.html#coursework",
+    "title": "🗓️ Sessions 17 & 18: Linear regresssion",
+    "section": "✍️ Coursework",
+    "text": "✍️ Coursework\n\nDo the exercises LinearRegression1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"LinearRegression1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
+  },
+  {
     "objectID": "2024Spring/material/timetable.html",
     "href": "2024Spring/material/timetable.html",
     "title": "Seminar timetable",
     "section": "",
-    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (07.06.2024)\n\n\n\n\n\n\n🗓️Adjusting times after sampling session!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\nNN\n31.05.24\nFri\nCancelled\n\n\n14\n06.06.24\nThu\nIntroduction to data analysis\n\n\n15\n07.06.24\nFri\nSampling I\n\n\n16\n13.06.24\nThu\nSampling II\n\n\n17\n14.06.24\nFri\nSimple linear regression\n\n\n18\n20.06.24\nThu\nMultiple linear regression\n\n\n19\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
+    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (07.06.2024)\n\n\n\n\n\n\n🗓️Adjusting times after sampling session!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\nNN\n31.05.24\nFri\nCancelled\n\n\n14\n06.06.24\nThu\nIntroduction to data analysis\n\n\n15\n07.06.24\nFri\nSampling I\n\n\n16\n13.06.24\nThu\nSampling II\n\n\n17\n14.06.24\nFri\nSimple linear regression I\n\n\n18\n20.06.24\nThu\nSimple linear regression II\n\n\n19\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
   },
   {
     "objectID": "2024Spring/material/session12-material/session12-solutions.html",
@@ -938,17 +973,10 @@
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
   },
   {
-    "objectID": "2024Spring/material/session16.html",
-    "href": "2024Spring/material/session16.html",
-    "title": "🗓️ Session 16: Linear regresssion",
+    "objectID": "2024Spring/material/session15-solution-eufstudents.html",
+    "href": "2024Spring/material/session15-solution-eufstudents.html",
+    "title": "Estimating average height of EUF students - a MCS",
     "section": "",
-    "text": "TBA"
-  },
-  {
-    "objectID": "2024Spring/material/session16.html#lecture-slides",
-    "href": "2024Spring/material/session16.html#lecture-slides",
-    "title": "🗓️ Session 16: Linear regresssion",
-    "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+    "text": "library(tibble)\nlibrary(ggplot2)\n\nTask:\n\nSuppose you are interested in the average height of the students at the European University Flensburg and you are wondering what a good sample size would be. Suppose further that the data set DataScienceExercises::EUFstudents contains the result of a census of EUF students. Study the process of sampling by carrying an MCS in which you draw random samples of size 10 and 50 from this population. To do this, conduct an MCS with 1000 repetitions and check what difference it makes to increase the sample size.\n\nFirst, make sure you understand which steps are necessary to solve this task. Here, you need to:\n\nRead in and understand the data set DataScienceExercises::EUFstudents\nDraw a random sample from this data set and compute the average height of students in this sample\nDesign a MCS in which this draw is executed 1000 times for two different sample sizes\nAnalyze the results by studying the mean and variance of the estimates.\n\nOnce you have set up such a plan you can proceed step-by-step.\n\n1 Read in and understand the data set\nIt is always a good idea to have a shortcut to your data:\n\nstudent_data &lt;- DataScienceExercises::EUFstudents\n\nThen, inspect the data:\n\nhead(student_data)\n\n# A tibble: 6 × 2\n  Gender Height\n  &lt;chr&gt;   &lt;dbl&gt;\n1 female   159.\n2 female   161.\n3 female   173.\n4 female   163.\n5 female   164.\n6 female   174.\n\n\nWe see that there are two columns. For the purpose of this task, only the column Height is relevant.\n\n\n2 Draw and analyze a random sample from this data set\nTo draw a random sample of size 10, we can use the function sample() as follows:\n\nsample(x = student_data[[\"Height\"]], size = 10)\n\n [1] 158.0240 164.2462 155.5370 193.4313 173.8579 182.2533 159.8923 166.3148\n [9] 166.3390 167.3599\n\n\nNote that sample() takes as input an atomic vector. Thus, you need to extract the column Height as a vector from the underlying data set before drawing the sample!\nBut since we are interested in the average height of the students (our population parameter of interest), we need to compute this parameter also for our sample:\n\nmean(sample(x = student_data[[\"Height\"]], size = 10))\n\n[1] 168.4152\n\n\nWe now need to embed this process into a MCS!\n\n\n3 Design a MCS\nAlthough we need to run our MCS for 1000 times, it is a good idea to first design it using fewer iteration. In any case, we should follow the standard procedure of developing an MCS.\nFirst, create an output container with as many NAs as we will have repetitions. Note that since we collect two kinds of results - one for sample size 10, one for sample size 50 - we need two containers:\n\nn_repetitions &lt;- 5 # Start with 5 iterations\noutput_container_n10 &lt;- rep(NA, n_repetitions)\noutput_container_n50 &lt;- rep(NA, n_repetitions)\noutput_container_n10\n\n[1] NA NA NA NA NA\n\n\nSecond, think about the looping sequence. In our case, we want to repeat the MCS for n_repetitions times, so the looping sequence becomes:\n\nfor (i in seq_len(n_repetitions))\n\nThird, add the action body. Here we use the code to draw a sample from above and just integrate it into the loop:\n\nfor (i in seq_len(n_repetitions)){\n  output_container_n10[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 10))\n\n    output_container_n50[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 50))\n}\n\nFinally, to make our results fully reproducible despite involving random processes, we use the function set.seed().\nIn all, this leads to the following code:\n\nn_repetitions &lt;- 5 # Start with 5 iterations\noutput_container_n10 &lt;- rep(NA, n_repetitions)\noutput_container_n50 &lt;- rep(NA, n_repetitions)\n\nset.seed(123)\nfor (i in seq_len(n_repetitions)){\n  output_container_n10[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 10))\n\n    output_container_n50[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 50))\n}\n\nWe can test this by running the code and inspect the output container:\n\noutput_container_n10\n\n[1] 166.1539 163.8509 167.5664 168.1203 167.5359\n\n\nOkay, this makes sense. So now we can set n_repetitions to 1000 and run the MCS as desired.\n\nAnalyze the results by studying the mean and variance of the estimates\n\nTo compare the results, we now look at the resulting sampling distributions. We can do so visually, but for the task at hand, just computing the mean and standard deviation is sufficient:\n\nn_repetitions &lt;- 1000\noutput_container_n10 &lt;- rep(NA, n_repetitions)\noutput_container_n50 &lt;- rep(NA, n_repetitions)\n\nset.seed(123)\nfor (i in seq_len(n_repetitions)){\n  output_container_n10[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 10))\n\n    output_container_n50[i] &lt;- mean(sample(\n    x = student_data[[\"Height\"]], size = 50))\n}\n\nmean_10 &lt;- mean(output_container_n10)\nmean_50 &lt;- mean(output_container_n50)\nsd_10 &lt;- sd(output_container_n10)\nsd_50 &lt;- sd(output_container_n50)\n\ntibble::tribble(\n  ~`Sample size`, ~Mean, ~Variation,\n  #--|--|----\n  10, mean_10, sd_10,\n  50, mean_50, sd_50\n)\n\n# A tibble: 2 × 3\n  `Sample size`  Mean Variation\n          &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1            10  167.      2.77\n2            50  167.      1.23\n\n\nWe see that the mean is very similar, meaning that on average both sample sizes are equivalent. But we also see that the larger sample shows much less variation and the estimates from the single samples are more concentrated around the true value. Thus, having larger samples makes our estimations more precise!\n\n\n4 Addendum: Visualizing the results\nIf you wanted to visualize the results, you could proceed as follows. First, because ggplot() requires tibbles as input, you first need to put your results into a tibble:\n\nresult_tibble &lt;- tibble::tibble(\n  \"sample_mean\" = c(output_container_n10, output_container_n50),\n  \"sample_size\" = c(rep(10, length(output_container_n10)), \n                    rep(50, length(output_container_n50)))\n)\nhead(result_tibble)\n\n# A tibble: 6 × 2\n  sample_mean sample_size\n        &lt;dbl&gt;       &lt;dbl&gt;\n1        166.          10\n2        164.          10\n3        168.          10\n4        168.          10\n5        168.          10\n6        169.          10\n\n\n\nsampling_plot &lt;- ggplot(data = result_tibble, aes(x=sample_mean)) +\n  geom_histogram(alpha=0.5, color=\"#00395B\", fill=\"#00395B\", binwidth = 0.5) +\n  scale_y_continuous(expand = expansion(add = c(0, 10))) +\n  facet_wrap(~sample_size, nrow = 2) +\n  labs(\n    x = \"Sample means\", \n    y = \"Count\", \n    title = \"The sampling distributions\") +\n  theme_linedraw()\nsampling_plot\n\n\n\n\nHere, the similar mean but very different variance become apparent!"
   }
 ]
