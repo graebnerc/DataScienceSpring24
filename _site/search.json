@@ -564,7 +564,7 @@
     "href": "2024Spring/material/timetable.html",
     "title": "Seminar timetable",
     "section": "",
-    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (16.05.2024)\n\n\n\n\n\n\n🗓️Adjusting times after May 17; especially: no lecture on May 23!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\nNN\n31.05.24\nFri\nCancelled\n\n\n14\n06.06.24\nThu\nIntroduction to data analysis\n\n\n15\n07.06.24\nFri\nSampling theory\n\n\n16\n13.06.24\nThu\nSimple linear regression\n\n\n17\n14.06.24\nFri\nMultiple linear regression I\n\n\n18\n20.06.24\nThu\nMultiple linear regression II\n\n\n19\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
+    "text": "Tentative outline\n\n\n\n\n\n\n📢 Important change! (07.06.2024)\n\n\n\n\n\n\n🗓️Adjusting times after sampling session!\n\n\n\n\n\n\n\n\n\n\n\n\n\n#\nDate\nDay\nTopic\n\n\n\n\n1\n14.03.24\nThu\nGeneral introduction and installation\n\n\n2\n21.03.24\nThu\nIntroducing the basics of R and R Studio\n\n\n3\n28.03.24\nThu\nBasic object types in R (learning video)\n\n\n4\n11.04.24\nThu\nAdvanced object types in R (learning video)\n\n\n5\n18.04.24\nThu\nRecap and practice\n\n\n6\n19.04.24\nFri\nRecap and practice\n\n\n7\n25.04.24\nThu\nData visualization\n\n\n8\n26.04.24\nFri\nFinish data visualization and Project Management\n\n\n9\n02.05.24\nThu\nData import (video lecture)\n\n\n10\n03.05.24\nFri\nVideo lectures on data wrangling.\n\n\nNN\n09.05.24\nThu\nNo lecture due to Christi Himmelfahrt\n\n\n11\n10.05.24\nFri\nIntroducing Quarto and R Markdown\n\n\n12\n16.05.24\nThu\nRecap and practice: Visualization & data preparation\n\n\n13\n30.05.24\nThu\nRecap and practice: explorative data analysis\n\n\nNN\n31.05.24\nFri\nCancelled\n\n\n14\n06.06.24\nThu\nIntroduction to data analysis\n\n\n15\n07.06.24\nFri\nSampling I\n\n\n16\n13.06.24\nThu\nSampling II\n\n\n17\n14.06.24\nFri\nSimple linear regression\n\n\n18\n20.06.24\nThu\nMultiple linear regression\n\n\n19\n21.06.24\nFri\nRecap and practice\n\n\nNN\n27.06.24\nMon\nFinal exam; 14:00 – 16:00, HEL 063\n\n\nNN\n29.08.24\nThu\nRe-take exam; 14:00 – 16:00, HEL 063\n\n\n\nThe re-take exam is only for those who have failed the final exam."
   },
   {
     "objectID": "2024Spring/material/session12-material/session12-solutions.html",
@@ -936,5 +936,19 @@
     "title": "Quarto exercises",
     "section": "",
     "text": "Create a new Quarto document where you set the title, date, and the author explicitly. Write a sample text that comprises…\n\n…at least one level 1 heading\n…at least two level 2 headings\n…a YAML part that specifies that R code remains hidden by default\n…one R chunk where both the output and the code is printed in the final document\n…one R chunk that produces a simply ggplot object and where the code producing the plot is hidden\n\nThen do the following:\n\nKnit the document to html with a floating table of contents and a special theme.\nMake the document available via Netlify Drop and add the possibility to download the underlying Rmd file. Note: For Netlify Drop to work, the html file must be called index.html!\nKnit the document to PDF and make sure that it includes a table of contents.\n\nA sample solution for the Rmd file can be found here (the Netlify version is here)."
+  },
+  {
+    "objectID": "2024Spring/material/session16.html",
+    "href": "2024Spring/material/session16.html",
+    "title": "🗓️ Session 16: Linear regresssion",
+    "section": "",
+    "text": "TBA"
+  },
+  {
+    "objectID": "2024Spring/material/session16.html#lecture-slides",
+    "href": "2024Spring/material/session16.html#lecture-slides",
+    "title": "🗓️ Session 16: Linear regresssion",
+    "section": "👨‍🏫 Lecture Slides",
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
   }
 ]
