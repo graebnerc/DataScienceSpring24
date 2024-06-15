@@ -8,7 +8,7 @@
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Claudius Gräbner-Radkowitsch">
 
-<title>Data science using R - 🗓️ Sessions 15 and 16: Sampling</title>
+<title>Data science using R - Estimating average height of EUF students</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,60 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,8 +31,6 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../2024Spring/material/session17.html" rel="next">
-<link href="../../2024Spring/material/session14.html" rel="prev">
 <link href="../../figures/icons/course_favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -116,9 +61,12 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Data science using R - 🗓️ Sessions 15 and 16: Sampling">
-<meta property="og:description" content="">
+<meta property="og:title" content="Data science using R - Estimating average height of EUF students">
+<meta property="og:description" content="Solving the exercise on terminology">
+<meta property="og:image" content="session15-solution-terminology_files/figure-html/unnamed-chunk-2-1.png">
 <meta property="og:site-name" content="Data science using R">
 </head>
 
@@ -148,7 +96,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../2024Spring/material/index.html">🗓️ Material</a></li><li class="breadcrumb-item"><a href="../../2024Spring/material/session15.html">Sessions 15 &amp; 16</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Estimating average height of EUF students</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -261,7 +209,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../2024Spring/material/session15.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../2024Spring/material/session15.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sessions 15 &amp; 16</span></a>
   </div>
 </li>
@@ -289,19 +237,19 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture-slides" id="toc-lecture-slides" class="nav-link active" data-scroll-target="#lecture-slides">👨‍🏫 Lecture Slides</a></li>
-  <li><a href="#lecture-videos" id="toc-lecture-videos" class="nav-link" data-scroll-target="#lecture-videos">🎥 Lecture videos</a></li>
-  <li><a href="#mandatory-reading" id="toc-mandatory-reading" class="nav-link" data-scroll-target="#mandatory-reading">📚 Mandatory Reading</a></li>
-  <li><a href="#coursework" id="toc-coursework" class="nav-link" data-scroll-target="#coursework">✍️ Coursework</a></li>
+  <li><a href="#task" id="toc-task" class="nav-link active" data-scroll-target="#task"><span class="header-section-number">1</span> Task</a></li>
+  <li><a href="#possible-solution" id="toc-possible-solution" class="nav-link" data-scroll-target="#possible-solution"><span class="header-section-number">2</span> Possible solution</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">3</span> Summary table</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="session15-solution-terminology.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">🗓️ Sessions 15 and 16: Sampling</h1>
+<h1 class="title">Estimating average height of EUF students</h1>
+<p class="subtitle lead">Solving the exercise on terminology</p>
 </div>
 
 
@@ -318,14 +266,14 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">07 06 2024</p>
+      <p class="date">15 06 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">14 06 2024</p>
+      <p class="date-modified">15 06 2024</p>
     </div>
   </div>
     
@@ -334,82 +282,107 @@ div.csl-indent {
 
 </header>
 
-<p>A central concept in data science - and in applied statistics more generally - is that of <em>sampling</em>. This refers to the strategy of using (small) samples to learn about a (large) population. For example, if you wanted to understand the effect of TV advertising on the consumer behaviour of young men in Germany, you could study the whole population of young men in Germany. But since this is usually not feasible, you would rather take a sample of young men, study their behaviour and then generalise to the whole population. In this session we will discuss when and how this is possible. In this context, we will also learn about the concept of <em>Monte Carlo simulations</em> and two central concepts of probability theory underlying applied statistics: the central limit theorem and the law of large numbers, both of which underlie much of modern sampling theory.</p>
-<section id="lecture-slides" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-slides">👨‍🏫 Lecture Slides</h2>
-<p>Either click on the slide area below or click <a href="../../2024Spring/material/slides/T15-Sampling.pdf">here</a> to download the slides.</p>
-<div class="embed-container">
-  <iframe src="../../2024Spring/material/slides/T15-Sampling.pdf" style="border: 0.5px" width="80%" height="80%"></iframe>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lecture code
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<script src="https://gist.github.com/graebnerc/5567989fe275f6eefbe6ea2dafe1a750.js"></script>
-</div>
-</div>
-</div>
-<ul>
-<li><a href="../../2024Spring/material/session15-solution-eufstudents.html">Extensive solution</a> for the exercise on the average height of EUF students</li>
-<li><a href="../../2024Spring/material/session15-solution-terminology.html">Solution</a> for the exercise on terminology</li>
-<li>Explanation of the <a href="../../2024Spring/material/session15-solution-clt.html">Central Limit Theorem</a> and the corresponding exercise</li>
-</ul>
+<section id="task" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Task</h1>
+<blockquote class="blockquote">
+<p>Consider the example from the <a href="">previous task</a> on estimating the average height of EUF students. Use the right vocabulary from sampling theory to describe it.</p>
+</blockquote>
 </section>
-<section id="lecture-videos" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-videos">🎥 Lecture videos</h2>
-<p>So far, there are no learning videos available for this lecture.</p>
-</section>
-<section id="mandatory-reading" class="level2">
-<h2 class="anchored" data-anchor-id="mandatory-reading">📚 Mandatory Reading</h2>
-<ul>
-<li><a href="../../2024Spring/tutorials/mcs/index.html">Tutorial on sampling</a></li>
-<li><a href="https://moderndive.com/7-sampling.html">Chapter 7</a> in <span class="citation" data-cites="moderndive">Ismay and Kim (<a href="#ref-moderndive" role="doc-biblioref">2020</a>)</span>.</li>
-</ul>
-</section>
-<section id="coursework" class="level2">
-<h2 class="anchored" data-anchor-id="coursework">✍️ Coursework</h2>
-<ul>
-<li>Do the exercises <code>Sampling</code> from the <code>DataScienceExercises</code> package</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Quick code for starting the exercises
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<section id="possible-solution" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Possible solution</h1>
+<p>The <em>population</em> is the set of all students enrolled at the EUF (<span class="math inline">\(N=\)</span> 6402). We are interested in the <em>population parameter</em> ‘average height’.</p>
+<p>The <em>sample</em> is set of randomly drawn students from the population. We consider two cases, one with the <em>sample size</em> <span class="math inline">\(n=10\)</span> and one with <span class="math inline">\(n=20\)</span>. We can assume the sample is a viable random sample, i.e.&nbsp;that it is unbiased and representative of the population.</p>
+<p>The <em>point estimate</em> is the sample mean of the height, which is used to estimate the population parameter of interest (i.e.&nbsp;the average height of EUF students). This is viable since, given our assumptions, statements about the sample can be generalized to the population.</p>
+<p>The sampling distribution visualizes the sampling variation, i.e.&nbsp;the variation of the point estimate obtained from different random samples. While in reality the sampling distribution remains unknown due to the fact that only one sample can be drawn, in the present case we used an artificial population and a Monte Carlo Simulation to characterize the sampling distribution as follows:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"Sampling"</span>, </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">package =</span> <span class="st">"DataScienceExercises"</span>, </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">shiny_args=</span><span class="fu">list</span>(<span class="st">"launch.browser"</span><span class="ot">=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="session15-solution-terminology_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>The <em>standard error</em> corresponds to the standard deviation of the sampling distributions and, due to the MCS framework, can be computed directly:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Variation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sample size: 10</td>
+<td style="text-align: right;">166.49</td>
+<td style="text-align: right;">2.832</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sample size: 50</td>
+<td style="text-align: right;">166.54</td>
+<td style="text-align: right;">1.244</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-
+</section>
+<section id="summary-table" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Summary table</h1>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 85%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Pendant in example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Population</td>
+<td>Set of all students enrolled at the EUF</td>
+</tr>
+<tr class="even">
+<td>Sample</td>
+<td>Set of randomly drawn students from the population</td>
+</tr>
+<tr class="odd">
+<td>Sample size</td>
+<td>Here <code>10</code> or <code>50</code></td>
+</tr>
+<tr class="even">
+<td>Point estimate</td>
+<td>Mean height of all students in the sample</td>
+</tr>
+<tr class="odd">
+<td>Sampling distribution</td>
+<td>The distribution of all the samples drawn from the population</td>
+</tr>
+<tr class="even">
+<td>Standard error</td>
+<td>The standard deviation of the sampling distribution</td>
+</tr>
+<tr class="odd">
+<td>Properties of the sample</td>
+<td>We assume the sample to be a viable random sample, i.e.&nbsp;that it is unbiased and representative of the population, so its results are generalizable.</td>
+</tr>
+<tr class="even">
+<td>Census</td>
+<td>This would mean to measure the height of every student in the population directly.</td>
+</tr>
+<tr class="odd">
+<td>Inference</td>
+<td>The strategy of understanding a population parameter by studying a sample and generalize to the population.</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-moderndive" class="csl-entry" role="listitem">
-Ismay, C. and Kim, A. Y.-S. (2020) <em>Statistical inference via data science: A <span>ModernDive</span>, into <span>R</span> and the tidyverse</em>, Boca Raton: <span>CRC Press, Taylor and Francis Group</span>, available at <a href="https://moderndive.com/index.html">https://moderndive.com/index.html</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -657,18 +630,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../2024Spring/material/session14.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Session 14</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../2024Spring/material/session17.html" class="pagination-link">
-        <span class="nav-page-text">Sessions 17 &amp; 18</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
