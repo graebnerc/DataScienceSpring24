@@ -22,6 +22,11 @@ Either click on the slide area below or click
 </div>
 ```
 
+::: {.callout-tip collapse="true"}
+## Lecture code
+
+<script src="https://gist.github.com/graebnerc/ec8973c09a75da199a8cc3f564e1da96.js"></script>
+:::
 
 ## 🎥 Lecture videos 
 

@@ -592,7 +592,7 @@
     "href": "2024Spring/material/session17.html#lecture-slides",
     "title": "🗓️ Sessions 17 & 18: Linear regresssion",
     "section": "👨‍🏫 Lecture Slides",
-    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides."
+    "text": "👨‍🏫 Lecture Slides\nEither click on the slide area below or click here to download the slides.\n\n  \n\n\n\n\n\n\n\nLecture code"
   },
   {
     "objectID": "2024Spring/material/session17.html#lecture-videos",
@@ -614,6 +614,13 @@
     "title": "🗓️ Sessions 17 & 18: Linear regresssion",
     "section": "✍️ Coursework",
     "text": "✍️ Coursework\n\nDo the exercises LinearRegression1 from the DataScienceExercises package\n\n\n\n\n\n\n\nQuick code for starting the exercises\n\n\n\n\n\n\nlearnr::run_tutorial(\n  name = \"LinearRegression1\", \n  package = \"DataScienceExercises\", \n  shiny_args=list(\"launch.browser\"=TRUE))"
+  },
+  {
+    "objectID": "2024Spring/material/session19.html",
+    "href": "2024Spring/material/session19.html",
+    "title": "🗓️ Session 19: Recap and practice",
+    "section": "",
+    "text": "Possible solution to the wrangling task in the mock exam"
   },
   {
     "objectID": "2024Spring/material/timetable.html",
